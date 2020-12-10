@@ -1,0 +1,62 @@
+### YamlMime:ManagedReference
+items:
+- uid: Bodic.Unit
+  commentId: N:Bodic.Unit
+  id: Bodic.Unit
+  children:
+  - Bodic.Unit.Chord
+  - Bodic.Unit.Component
+  - Bodic.Unit.Container
+  - Bodic.Unit.NCR
+  - Bodic.Unit.Note
+  - Bodic.Unit.PitchClassSet
+  langs:
+  - csharp
+  - vb
+  name: Bodic.Unit
+  nameWithType: Bodic.Unit
+  fullName: Bodic.Unit
+  type: Namespace
+  assemblies:
+  - Bodic
+references:
+- uid: Bodic.Unit.Chord
+  commentId: T:Bodic.Unit.Chord
+  parent: Bodic.Unit
+  name: Chord
+  nameWithType: Chord
+  fullName: Bodic.Unit.Chord
+- uid: Bodic.Unit.Component
+  commentId: T:Bodic.Unit.Component
+  parent: Bodic.Unit
+  name: Component
+  nameWithType: Component
+  fullName: Bodic.Unit.Component
+- uid: Bodic.Unit.Container
+  commentId: T:Bodic.Unit.Container
+  name: Container
+  nameWithType: Container
+  fullName: Bodic.Unit.Container
+- uid: Bodic.Unit.NCR
+  commentId: T:Bodic.Unit.NCR
+  parent: Bodic.Unit
+  name: NCR
+  nameWithType: NCR
+  fullName: Bodic.Unit.NCR
+- uid: Bodic.Unit.Note
+  commentId: T:Bodic.Unit.Note
+  parent: Bodic.Unit
+  name: Note
+  nameWithType: Note
+  fullName: Bodic.Unit.Note
+- uid: Bodic.Unit.PitchClassSet
+  commentId: T:Bodic.Unit.PitchClassSet
+  parent: Bodic.Unit
+  name: PitchClassSet
+  nameWithType: PitchClassSet
+  fullName: Bodic.Unit.PitchClassSet
+- uid: Bodic.Unit
+  commentId: N:Bodic.Unit
+  name: Bodic.Unit
+  nameWithType: Bodic.Unit
+  fullName: Bodic.Unit

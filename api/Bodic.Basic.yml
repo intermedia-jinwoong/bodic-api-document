@@ -1,0 +1,950 @@
+### YamlMime:ManagedReference
+items:
+- uid: Bodic.Basic
+  commentId: T:Bodic.Basic
+  id: Basic
+  parent: Bodic
+  children:
+  - Bodic.Basic.BuildSequenceFromDeltaValues(System.Int32,System.Collections.Generic.List{System.Int32})
+  - Bodic.Basic.ExpandIntervals(System.Collections.Generic.List{System.Int32},System.Single)
+  - Bodic.Basic.ExtractDeltaValuesFromSequence(System.Collections.Generic.List{System.Int32})
+  - Bodic.Basic.InvertPitchClass(System.Int32,System.Int32)
+  - Bodic.Basic.InvertPitchClassSequence(System.Collections.Generic.List{System.Int32},System.Int32)
+  - Bodic.Basic.InvertPitchSequence(System.Collections.Generic.List{System.Int32},System.Int32)
+  - Bodic.Basic.Mod12(System.Int32)
+  - Bodic.Basic.Retrograde(System.Collections.Generic.List{System.Int32})
+  - Bodic.Basic.Transpose(Bodic.Unit.PitchClassSet,System.Int32)
+  - Bodic.Basic.Transpose(System.Collections.Generic.List{System.Int32},System.Int32,System.Boolean)
+  langs:
+  - csharp
+  - vb
+  name: Basic
+  nameWithType: Basic
+  fullName: Bodic.Basic
+  type: Class
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/BodicComposition.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: Basic
+    path: BodicComposition.cs
+    startLine: 8
+  assemblies:
+  - Bodic
+  namespace: Bodic
+  syntax:
+    content: public static class Basic
+    content.vb: Public Module Basic
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Bodic.Basic.Mod12(System.Int32)
+  commentId: M:Bodic.Basic.Mod12(System.Int32)
+  id: Mod12(System.Int32)
+  parent: Bodic.Basic
+  langs:
+  - csharp
+  - vb
+  name: Mod12(Int32)
+  nameWithType: Basic.Mod12(Int32)
+  fullName: Bodic.Basic.Mod12(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/BodicComposition.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: Mod12
+    path: BodicComposition.cs
+    startLine: 10
+  assemblies:
+  - Bodic
+  namespace: Bodic
+  syntax:
+    content: public static int Mod12(int pitch)
+    parameters:
+    - id: pitch
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function Mod12(pitch As Integer) As Integer
+  overload: Bodic.Basic.Mod12*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Bodic.Basic.Transpose(System.Collections.Generic.List{System.Int32},System.Int32,System.Boolean)
+  commentId: M:Bodic.Basic.Transpose(System.Collections.Generic.List{System.Int32},System.Int32,System.Boolean)
+  id: Transpose(System.Collections.Generic.List{System.Int32},System.Int32,System.Boolean)
+  parent: Bodic.Basic
+  langs:
+  - csharp
+  - vb
+  name: Transpose(List<Int32>, Int32, Boolean)
+  nameWithType: Basic.Transpose(List<Int32>, Int32, Boolean)
+  fullName: Bodic.Basic.Transpose(System.Collections.Generic.List<System.Int32>, System.Int32, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/BodicComposition.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: Transpose
+    path: BodicComposition.cs
+    startLine: 30
+  assemblies:
+  - Bodic
+  namespace: Bodic
+  summary: "\nTransposes a line of pitches by sepecific pitch interval. This preserves the ordered pitch intervals in the line. \n"
+  example: []
+  syntax:
+    content: public static List<int> Transpose(List<int> lineOfPitches, int pitchinterval, bool isPitchClass)
+    parameters:
+    - id: lineOfPitches
+      type: System.Collections.Generic.List{System.Int32}
+      description: ''
+    - id: pitchinterval
+      type: System.Int32
+      description: ''
+    - id: isPitchClass
+      type: System.Boolean
+    return:
+      type: System.Collections.Generic.List{System.Int32}
+      description: ''
+    content.vb: Public Shared Function Transpose(lineOfPitches As List(Of Integer), pitchinterval As Integer, isPitchClass As Boolean) As List(Of Integer)
+  overload: Bodic.Basic.Transpose*
+  nameWithType.vb: Basic.Transpose(List(Of Int32), Int32, Boolean)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Bodic.Basic.Transpose(System.Collections.Generic.List(Of System.Int32), System.Int32, System.Boolean)
+  name.vb: Transpose(List(Of Int32), Int32, Boolean)
+- uid: Bodic.Basic.Transpose(Bodic.Unit.PitchClassSet,System.Int32)
+  commentId: M:Bodic.Basic.Transpose(Bodic.Unit.PitchClassSet,System.Int32)
+  id: Transpose(Bodic.Unit.PitchClassSet,System.Int32)
+  parent: Bodic.Basic
+  langs:
+  - csharp
+  - vb
+  name: Transpose(PitchClassSet, Int32)
+  nameWithType: Basic.Transpose(PitchClassSet, Int32)
+  fullName: Bodic.Basic.Transpose(Bodic.Unit.PitchClassSet, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/BodicComposition.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: Transpose
+    path: BodicComposition.cs
+    startLine: 48
+  assemblies:
+  - Bodic
+  namespace: Bodic
+  syntax:
+    content: public static PitchClassSet Transpose(PitchClassSet lineOfPitchClasses, int pitchinterval)
+    parameters:
+    - id: lineOfPitchClasses
+      type: Bodic.Unit.PitchClassSet
+    - id: pitchinterval
+      type: System.Int32
+    return:
+      type: Bodic.Unit.PitchClassSet
+    content.vb: Public Shared Function Transpose(lineOfPitchClasses As PitchClassSet, pitchinterval As Integer) As PitchClassSet
+  overload: Bodic.Basic.Transpose*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Bodic.Basic.InvertPitchSequence(System.Collections.Generic.List{System.Int32},System.Int32)
+  commentId: M:Bodic.Basic.InvertPitchSequence(System.Collections.Generic.List{System.Int32},System.Int32)
+  id: InvertPitchSequence(System.Collections.Generic.List{System.Int32},System.Int32)
+  parent: Bodic.Basic
+  langs:
+  - csharp
+  - vb
+  name: InvertPitchSequence(List<Int32>, Int32)
+  nameWithType: Basic.InvertPitchSequence(List<Int32>, Int32)
+  fullName: Bodic.Basic.InvertPitchSequence(System.Collections.Generic.List<System.Int32>, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/BodicComposition.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: InvertPitchSequence
+    path: BodicComposition.cs
+    startLine: 73
+  assemblies:
+  - Bodic
+  namespace: Bodic
+  summary: "\nCreate a new line of pitches starting on paramter2(startPitch) by inverting paramter1(lineOfPitches).\n"
+  example: []
+  syntax:
+    content: public static List<int> InvertPitchSequence(List<int> lineOfPitches, int startPitch)
+    parameters:
+    - id: lineOfPitches
+      type: System.Collections.Generic.List{System.Int32}
+      description: ''
+    - id: startPitch
+      type: System.Int32
+      description: ''
+    return:
+      type: System.Collections.Generic.List{System.Int32}
+      description: ''
+    content.vb: Public Shared Function InvertPitchSequence(lineOfPitches As List(Of Integer), startPitch As Integer) As List(Of Integer)
+  overload: Bodic.Basic.InvertPitchSequence*
+  nameWithType.vb: Basic.InvertPitchSequence(List(Of Int32), Int32)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Bodic.Basic.InvertPitchSequence(System.Collections.Generic.List(Of System.Int32), System.Int32)
+  name.vb: InvertPitchSequence(List(Of Int32), Int32)
+- uid: Bodic.Basic.InvertPitchClass(System.Int32,System.Int32)
+  commentId: M:Bodic.Basic.InvertPitchClass(System.Int32,System.Int32)
+  id: InvertPitchClass(System.Int32,System.Int32)
+  parent: Bodic.Basic
+  langs:
+  - csharp
+  - vb
+  name: InvertPitchClass(Int32, Int32)
+  nameWithType: Basic.InvertPitchClass(Int32, Int32)
+  fullName: Bodic.Basic.InvertPitchClass(System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/BodicComposition.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: InvertPitchClass
+    path: BodicComposition.cs
+    startLine: 84
+  assemblies:
+  - Bodic
+  namespace: Bodic
+  syntax:
+    content: public static int InvertPitchClass(int pc, int index)
+    parameters:
+    - id: pc
+      type: System.Int32
+    - id: index
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function InvertPitchClass(pc As Integer, index As Integer) As Integer
+  overload: Bodic.Basic.InvertPitchClass*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Bodic.Basic.InvertPitchClassSequence(System.Collections.Generic.List{System.Int32},System.Int32)
+  commentId: M:Bodic.Basic.InvertPitchClassSequence(System.Collections.Generic.List{System.Int32},System.Int32)
+  id: InvertPitchClassSequence(System.Collections.Generic.List{System.Int32},System.Int32)
+  parent: Bodic.Basic
+  langs:
+  - csharp
+  - vb
+  name: InvertPitchClassSequence(List<Int32>, Int32)
+  nameWithType: Basic.InvertPitchClassSequence(List<Int32>, Int32)
+  fullName: Bodic.Basic.InvertPitchClassSequence(System.Collections.Generic.List<System.Int32>, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/BodicComposition.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: InvertPitchClassSequence
+    path: BodicComposition.cs
+    startLine: 93
+  assemblies:
+  - Bodic
+  namespace: Bodic
+  syntax:
+    content: public static List<int> InvertPitchClassSequence(List<int> pcSeq, int index)
+    parameters:
+    - id: pcSeq
+      type: System.Collections.Generic.List{System.Int32}
+    - id: index
+      type: System.Int32
+    return:
+      type: System.Collections.Generic.List{System.Int32}
+    content.vb: Public Shared Function InvertPitchClassSequence(pcSeq As List(Of Integer), index As Integer) As List(Of Integer)
+  overload: Bodic.Basic.InvertPitchClassSequence*
+  nameWithType.vb: Basic.InvertPitchClassSequence(List(Of Int32), Int32)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Bodic.Basic.InvertPitchClassSequence(System.Collections.Generic.List(Of System.Int32), System.Int32)
+  name.vb: InvertPitchClassSequence(List(Of Int32), Int32)
+- uid: Bodic.Basic.Retrograde(System.Collections.Generic.List{System.Int32})
+  commentId: M:Bodic.Basic.Retrograde(System.Collections.Generic.List{System.Int32})
+  id: Retrograde(System.Collections.Generic.List{System.Int32})
+  parent: Bodic.Basic
+  langs:
+  - csharp
+  - vb
+  name: Retrograde(List<Int32>)
+  nameWithType: Basic.Retrograde(List<Int32>)
+  fullName: Bodic.Basic.Retrograde(System.Collections.Generic.List<System.Int32>)
+  type: Method
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/BodicComposition.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: Retrograde
+    path: BodicComposition.cs
+    startLine: 107
+  assemblies:
+  - Bodic
+  namespace: Bodic
+  syntax:
+    content: public static List<int> Retrograde(List<int> pitchSeq)
+    parameters:
+    - id: pitchSeq
+      type: System.Collections.Generic.List{System.Int32}
+    return:
+      type: System.Collections.Generic.List{System.Int32}
+    content.vb: Public Shared Function Retrograde(pitchSeq As List(Of Integer)) As List(Of Integer)
+  overload: Bodic.Basic.Retrograde*
+  nameWithType.vb: Basic.Retrograde(List(Of Int32))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Bodic.Basic.Retrograde(System.Collections.Generic.List(Of System.Int32))
+  name.vb: Retrograde(List(Of Int32))
+- uid: Bodic.Basic.BuildSequenceFromDeltaValues(System.Int32,System.Collections.Generic.List{System.Int32})
+  commentId: M:Bodic.Basic.BuildSequenceFromDeltaValues(System.Int32,System.Collections.Generic.List{System.Int32})
+  id: BuildSequenceFromDeltaValues(System.Int32,System.Collections.Generic.List{System.Int32})
+  parent: Bodic.Basic
+  langs:
+  - csharp
+  - vb
+  name: BuildSequenceFromDeltaValues(Int32, List<Int32>)
+  nameWithType: Basic.BuildSequenceFromDeltaValues(Int32, List<Int32>)
+  fullName: Bodic.Basic.BuildSequenceFromDeltaValues(System.Int32, System.Collections.Generic.List<System.Int32>)
+  type: Method
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/BodicComposition.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: BuildSequenceFromDeltaValues
+    path: BodicComposition.cs
+    startLine: 122
+  assemblies:
+  - Bodic
+  namespace: Bodic
+  summary: "\nBuilds a sequence using the difference sequence(delta x values).\nThis method is similar to dx->x in OM and bach.dx2x in bach.\n"
+  example: []
+  syntax:
+    content: public static List<int> BuildSequenceFromDeltaValues(int startValue, List<int> differenceSequence)
+    parameters:
+    - id: startValue
+      type: System.Int32
+      description: ''
+    - id: differenceSequence
+      type: System.Collections.Generic.List{System.Int32}
+      description: ''
+    return:
+      type: System.Collections.Generic.List{System.Int32}
+      description: ''
+    content.vb: Public Shared Function BuildSequenceFromDeltaValues(startValue As Integer, differenceSequence As List(Of Integer)) As List(Of Integer)
+  overload: Bodic.Basic.BuildSequenceFromDeltaValues*
+  nameWithType.vb: Basic.BuildSequenceFromDeltaValues(Int32, List(Of Int32))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Bodic.Basic.BuildSequenceFromDeltaValues(System.Int32, System.Collections.Generic.List(Of System.Int32))
+  name.vb: BuildSequenceFromDeltaValues(Int32, List(Of Int32))
+- uid: Bodic.Basic.ExtractDeltaValuesFromSequence(System.Collections.Generic.List{System.Int32})
+  commentId: M:Bodic.Basic.ExtractDeltaValuesFromSequence(System.Collections.Generic.List{System.Int32})
+  id: ExtractDeltaValuesFromSequence(System.Collections.Generic.List{System.Int32})
+  parent: Bodic.Basic
+  langs:
+  - csharp
+  - vb
+  name: ExtractDeltaValuesFromSequence(List<Int32>)
+  nameWithType: Basic.ExtractDeltaValuesFromSequence(List<Int32>)
+  fullName: Bodic.Basic.ExtractDeltaValuesFromSequence(System.Collections.Generic.List<System.Int32>)
+  type: Method
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/BodicComposition.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: ExtractDeltaValuesFromSequence
+    path: BodicComposition.cs
+    startLine: 138
+  assemblies:
+  - Bodic
+  namespace: Bodic
+  summary: "\nBuilds a sequence which contains difference between each element.\nx -> dx in OM and bach.x2dx in bach\n"
+  example: []
+  syntax:
+    content: public static List<int> ExtractDeltaValuesFromSequence(List<int> seq)
+    parameters:
+    - id: seq
+      type: System.Collections.Generic.List{System.Int32}
+      description: ''
+    return:
+      type: System.Collections.Generic.List{System.Int32}
+      description: ''
+    content.vb: Public Shared Function ExtractDeltaValuesFromSequence(seq As List(Of Integer)) As List(Of Integer)
+  overload: Bodic.Basic.ExtractDeltaValuesFromSequence*
+  nameWithType.vb: Basic.ExtractDeltaValuesFromSequence(List(Of Int32))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Bodic.Basic.ExtractDeltaValuesFromSequence(System.Collections.Generic.List(Of System.Int32))
+  name.vb: ExtractDeltaValuesFromSequence(List(Of Int32))
+- uid: Bodic.Basic.ExpandIntervals(System.Collections.Generic.List{System.Int32},System.Single)
+  commentId: M:Bodic.Basic.ExpandIntervals(System.Collections.Generic.List{System.Int32},System.Single)
+  id: ExpandIntervals(System.Collections.Generic.List{System.Int32},System.Single)
+  parent: Bodic.Basic
+  langs:
+  - csharp
+  - vb
+  name: ExpandIntervals(List<Int32>, Single)
+  nameWithType: Basic.ExpandIntervals(List<Int32>, Single)
+  fullName: Bodic.Basic.ExpandIntervals(System.Collections.Generic.List<System.Int32>, System.Single)
+  type: Method
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/BodicComposition.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: ExpandIntervals
+    path: BodicComposition.cs
+    startLine: 156
+  assemblies:
+  - Bodic
+  namespace: Bodic
+  summary: "\nScaling intervals of a sequence of notes by reducing or expanding each interval.\n"
+  example: []
+  syntax:
+    content: public static List<int> ExpandIntervals(List<int> pitchSeq, float scaleFactor)
+    parameters:
+    - id: pitchSeq
+      type: System.Collections.Generic.List{System.Int32}
+      description: ''
+    - id: scaleFactor
+      type: System.Single
+      description: ''
+    return:
+      type: System.Collections.Generic.List{System.Int32}
+      description: ''
+    content.vb: Public Shared Function ExpandIntervals(pitchSeq As List(Of Integer), scaleFactor As Single) As List(Of Integer)
+  overload: Bodic.Basic.ExpandIntervals*
+  nameWithType.vb: Basic.ExpandIntervals(List(Of Int32), Single)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Bodic.Basic.ExpandIntervals(System.Collections.Generic.List(Of System.Int32), System.Single)
+  name.vb: ExpandIntervals(List(Of Int32), Single)
+references:
+- uid: Bodic
+  commentId: N:Bodic
+  name: Bodic
+  nameWithType: Bodic
+  fullName: Bodic
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Bodic.Basic.Mod12*
+  commentId: Overload:Bodic.Basic.Mod12
+  name: Mod12
+  nameWithType: Basic.Mod12
+  fullName: Bodic.Basic.Mod12
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Bodic.Basic.Transpose*
+  commentId: Overload:Bodic.Basic.Transpose
+  name: Transpose
+  nameWithType: Basic.Transpose
+  fullName: Bodic.Basic.Transpose
+- uid: System.Collections.Generic.List{System.Int32}
+  commentId: T:System.Collections.Generic.List{System.Int32}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Int32>
+  nameWithType: List<Int32>
+  fullName: System.Collections.Generic.List<System.Int32>
+  nameWithType.vb: List(Of Int32)
+  fullName.vb: System.Collections.Generic.List(Of System.Int32)
+  name.vb: List(Of Int32)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Bodic.Unit.PitchClassSet
+  commentId: T:Bodic.Unit.PitchClassSet
+  parent: Bodic.Unit
+  name: PitchClassSet
+  nameWithType: PitchClassSet
+  fullName: Bodic.Unit.PitchClassSet
+- uid: Bodic.Unit
+  commentId: N:Bodic.Unit
+  name: Bodic.Unit
+  nameWithType: Bodic.Unit
+  fullName: Bodic.Unit
+- uid: Bodic.Basic.InvertPitchSequence*
+  commentId: Overload:Bodic.Basic.InvertPitchSequence
+  name: InvertPitchSequence
+  nameWithType: Basic.InvertPitchSequence
+  fullName: Bodic.Basic.InvertPitchSequence
+- uid: Bodic.Basic.InvertPitchClass*
+  commentId: Overload:Bodic.Basic.InvertPitchClass
+  name: InvertPitchClass
+  nameWithType: Basic.InvertPitchClass
+  fullName: Bodic.Basic.InvertPitchClass
+- uid: Bodic.Basic.InvertPitchClassSequence*
+  commentId: Overload:Bodic.Basic.InvertPitchClassSequence
+  name: InvertPitchClassSequence
+  nameWithType: Basic.InvertPitchClassSequence
+  fullName: Bodic.Basic.InvertPitchClassSequence
+- uid: Bodic.Basic.Retrograde*
+  commentId: Overload:Bodic.Basic.Retrograde
+  name: Retrograde
+  nameWithType: Basic.Retrograde
+  fullName: Bodic.Basic.Retrograde
+- uid: Bodic.Basic.BuildSequenceFromDeltaValues*
+  commentId: Overload:Bodic.Basic.BuildSequenceFromDeltaValues
+  name: BuildSequenceFromDeltaValues
+  nameWithType: Basic.BuildSequenceFromDeltaValues
+  fullName: Bodic.Basic.BuildSequenceFromDeltaValues
+- uid: Bodic.Basic.ExtractDeltaValuesFromSequence*
+  commentId: Overload:Bodic.Basic.ExtractDeltaValuesFromSequence
+  name: ExtractDeltaValuesFromSequence
+  nameWithType: Basic.ExtractDeltaValuesFromSequence
+  fullName: Bodic.Basic.ExtractDeltaValuesFromSequence
+- uid: Bodic.Basic.ExpandIntervals*
+  commentId: Overload:Bodic.Basic.ExpandIntervals
+  name: ExpandIntervals
+  nameWithType: Basic.ExpandIntervals
+  fullName: Bodic.Basic.ExpandIntervals
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single

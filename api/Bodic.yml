@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: Bodic
+  commentId: N:Bodic
+  id: Bodic
+  children:
+  - Bodic.Basic
+  - Bodic.Conversion
+  langs:
+  - csharp
+  - vb
+  name: Bodic
+  nameWithType: Bodic
+  fullName: Bodic
+  type: Namespace
+  assemblies:
+  - Bodic
+references:
+- uid: Bodic.Basic
+  commentId: T:Bodic.Basic
+  name: Basic
+  nameWithType: Basic
+  fullName: Bodic.Basic
+- uid: Bodic.Conversion
+  commentId: T:Bodic.Conversion
+  name: Conversion
+  nameWithType: Conversion
+  fullName: Bodic.Conversion

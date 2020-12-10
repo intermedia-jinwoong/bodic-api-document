@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: Bodic.Sequence
+  commentId: N:Bodic.Sequence
+  id: Bodic.Sequence
+  children:
+  - Bodic.Sequence.Sequence
+  langs:
+  - csharp
+  - vb
+  name: Bodic.Sequence
+  nameWithType: Bodic.Sequence
+  fullName: Bodic.Sequence
+  type: Namespace
+  assemblies:
+  - Bodic
+references:
+- uid: Bodic.Sequence.Sequence
+  commentId: T:Bodic.Sequence.Sequence
+  name: Sequence
+  nameWithType: Sequence
+  fullName: Bodic.Sequence.Sequence

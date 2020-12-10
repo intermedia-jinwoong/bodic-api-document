@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: Bodic.Combinatorics
+  commentId: N:Bodic.Combinatorics
+  id: Bodic.Combinatorics
+  children:
+  - Bodic.Combinatorics.Combinatorics
+  langs:
+  - csharp
+  - vb
+  name: Bodic.Combinatorics
+  nameWithType: Bodic.Combinatorics
+  fullName: Bodic.Combinatorics
+  type: Namespace
+  assemblies:
+  - Bodic
+references:
+- uid: Bodic.Combinatorics.Combinatorics
+  commentId: T:Bodic.Combinatorics.Combinatorics
+  name: Combinatorics
+  nameWithType: Combinatorics
+  fullName: Bodic.Combinatorics.Combinatorics

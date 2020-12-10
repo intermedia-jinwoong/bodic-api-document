@@ -1,0 +1,34 @@
+### YamlMime:ManagedReference
+items:
+- uid: Bodic.Interval
+  commentId: N:Bodic.Interval
+  id: Bodic.Interval
+  children:
+  - Bodic.Interval.Interval
+  - Bodic.Interval.Interval.PitchClassInterval
+  - Bodic.Interval.Interval.PitchInterval
+  langs:
+  - csharp
+  - vb
+  name: Bodic.Interval
+  nameWithType: Bodic.Interval
+  fullName: Bodic.Interval
+  type: Namespace
+  assemblies:
+  - Bodic
+references:
+- uid: Bodic.Interval.Interval
+  commentId: T:Bodic.Interval.Interval
+  name: Interval
+  nameWithType: Interval
+  fullName: Bodic.Interval.Interval
+- uid: Bodic.Interval.Interval.PitchInterval
+  commentId: T:Bodic.Interval.Interval.PitchInterval
+  name: Interval.PitchInterval
+  nameWithType: Interval.PitchInterval
+  fullName: Bodic.Interval.Interval.PitchInterval
+- uid: Bodic.Interval.Interval.PitchClassInterval
+  commentId: T:Bodic.Interval.Interval.PitchClassInterval
+  name: Interval.PitchClassInterval
+  nameWithType: Interval.PitchClassInterval
+  fullName: Bodic.Interval.Interval.PitchClassInterval

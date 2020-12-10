@@ -1,0 +1,566 @@
+### YamlMime:ManagedReference
+items:
+- uid: Bodic.Analysis.Analysis
+  commentId: T:Bodic.Analysis.Analysis
+  id: Analysis
+  parent: Bodic.Analysis
+  children:
+  - Bodic.Analysis.Analysis.IntervalClassVector(System.Collections.Generic.List{System.Int32})
+  - Bodic.Analysis.Analysis.SpacingIntervalsOf(Bodic.Unit.Chord)
+  langs:
+  - csharp
+  - vb
+  name: Analysis
+  nameWithType: Analysis
+  fullName: Bodic.Analysis.Analysis
+  type: Class
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/Analysis/Analysis.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: Analysis
+    path: Analysis/Analysis.cs
+    startLine: 11
+  assemblies:
+  - Bodic
+  namespace: Bodic.Analysis
+  syntax:
+    content: public static class Analysis
+    content.vb: Public Module Analysis
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Bodic.Analysis.Analysis.IntervalClassVector(System.Collections.Generic.List{System.Int32})
+  commentId: M:Bodic.Analysis.Analysis.IntervalClassVector(System.Collections.Generic.List{System.Int32})
+  id: IntervalClassVector(System.Collections.Generic.List{System.Int32})
+  parent: Bodic.Analysis.Analysis
+  langs:
+  - csharp
+  - vb
+  name: IntervalClassVector(List<Int32>)
+  nameWithType: Analysis.IntervalClassVector(List<Int32>)
+  fullName: Bodic.Analysis.Analysis.IntervalClassVector(System.Collections.Generic.List<System.Int32>)
+  type: Method
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/Analysis/Analysis.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: IntervalClassVector
+    path: Analysis/Analysis.cs
+    startLine: 20
+  assemblies:
+  - Bodic
+  namespace: Bodic.Analysis
+  summary: "\nCalculates and returns Interval Class Vector.\nThe sound quality of a collection of pitch classes can be roughly suggested by listing the interval classes it contains: \nthat is the interval-class content of the collection.\n"
+  example: []
+  syntax:
+    content: public static int[] IntervalClassVector(List<int> pitchClassSet)
+    parameters:
+    - id: pitchClassSet
+      type: System.Collections.Generic.List{System.Int32}
+      description: ''
+    return:
+      type: System.Int32[]
+      description: ''
+    content.vb: Public Shared Function IntervalClassVector(pitchClassSet As List(Of Integer)) As Integer()
+  overload: Bodic.Analysis.Analysis.IntervalClassVector*
+  nameWithType.vb: Analysis.IntervalClassVector(List(Of Int32))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Bodic.Analysis.Analysis.IntervalClassVector(System.Collections.Generic.List(Of System.Int32))
+  name.vb: IntervalClassVector(List(Of Int32))
+- uid: Bodic.Analysis.Analysis.SpacingIntervalsOf(Bodic.Unit.Chord)
+  commentId: M:Bodic.Analysis.Analysis.SpacingIntervalsOf(Bodic.Unit.Chord)
+  id: SpacingIntervalsOf(Bodic.Unit.Chord)
+  parent: Bodic.Analysis.Analysis
+  langs:
+  - csharp
+  - vb
+  name: SpacingIntervalsOf(Chord)
+  nameWithType: Analysis.SpacingIntervalsOf(Chord)
+  fullName: Bodic.Analysis.Analysis.SpacingIntervalsOf(Bodic.Unit.Chord)
+  type: Method
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/Analysis/Analysis.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: SpacingIntervalsOf
+    path: Analysis/Analysis.cs
+    startLine: 68
+  assemblies:
+  - Bodic
+  namespace: Bodic.Analysis
+  summary: "\nCalculates and returns the spacing interval of input chord members.\nThe spacing of a chord can be identified by the ordered pitch-class intervals between registrally adjacent notes in the chord, reading from the bass.\n"
+  example: []
+  syntax:
+    content: public static List<int> SpacingIntervalsOf(Chord chord)
+    parameters:
+    - id: chord
+      type: Bodic.Unit.Chord
+      description: ''
+    return:
+      type: System.Collections.Generic.List{System.Int32}
+      description: ''
+    content.vb: Public Shared Function SpacingIntervalsOf(chord As Chord) As List(Of Integer)
+  overload: Bodic.Analysis.Analysis.SpacingIntervalsOf*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Bodic.Analysis
+  commentId: N:Bodic.Analysis
+  name: Bodic.Analysis
+  nameWithType: Bodic.Analysis
+  fullName: Bodic.Analysis
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Bodic.Analysis.Analysis.IntervalClassVector*
+  commentId: Overload:Bodic.Analysis.Analysis.IntervalClassVector
+  name: IntervalClassVector
+  nameWithType: Analysis.IntervalClassVector
+  fullName: Bodic.Analysis.Analysis.IntervalClassVector
+- uid: System.Collections.Generic.List{System.Int32}
+  commentId: T:System.Collections.Generic.List{System.Int32}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Int32>
+  nameWithType: List<Int32>
+  fullName: System.Collections.Generic.List<System.Int32>
+  nameWithType.vb: List(Of Int32)
+  fullName.vb: System.Collections.Generic.List(Of System.Int32)
+  name.vb: List(Of Int32)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Int32[]
+  isExternal: true
+  name: Int32[]
+  nameWithType: Int32[]
+  fullName: System.Int32[]
+  nameWithType.vb: Int32()
+  fullName.vb: System.Int32()
+  name.vb: Int32()
+  spec.csharp:
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Bodic.Analysis.Analysis.SpacingIntervalsOf*
+  commentId: Overload:Bodic.Analysis.Analysis.SpacingIntervalsOf
+  name: SpacingIntervalsOf
+  nameWithType: Analysis.SpacingIntervalsOf
+  fullName: Bodic.Analysis.Analysis.SpacingIntervalsOf
+- uid: Bodic.Unit.Chord
+  commentId: T:Bodic.Unit.Chord
+  parent: Bodic.Unit
+  name: Chord
+  nameWithType: Chord
+  fullName: Bodic.Unit.Chord
+- uid: Bodic.Unit
+  commentId: N:Bodic.Unit
+  name: Bodic.Unit
+  nameWithType: Bodic.Unit
+  fullName: Bodic.Unit

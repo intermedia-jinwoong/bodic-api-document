@@ -1,0 +1,780 @@
+### YamlMime:ManagedReference
+items:
+- uid: Bodic.Unit.Container
+  commentId: T:Bodic.Unit.Container
+  id: Container
+  parent: Bodic.Unit
+  children:
+  - Bodic.Unit.Container.#ctor
+  - Bodic.Unit.Container.Append(Bodic.Unit.Chord)
+  - Bodic.Unit.Container.Append(Bodic.Unit.Note)
+  - Bodic.Unit.Container.elements
+  - Bodic.Unit.Container.Item(System.Int32)
+  - Bodic.Unit.Container.ToBachStringDuration
+  - Bodic.Unit.Container.ToBachStringPitch
+  - Bodic.Unit.Container.ToBachStringVelocity
+  langs:
+  - csharp
+  - vb
+  name: Container
+  nameWithType: Container
+  fullName: Bodic.Unit.Container
+  type: Class
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/Unit/Container.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: Container
+    path: Unit/Container.cs
+    startLine: 19
+  assemblies:
+  - Bodic
+  namespace: Bodic.Unit
+  syntax:
+    content: 'public class Container : Component'
+    content.vb: >-
+      Public Class Container
+          Inherits Component
+  inheritance:
+  - System.Object
+  - Bodic.Unit.Component
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Bodic.Unit.Container.elements
+  commentId: P:Bodic.Unit.Container.elements
+  id: elements
+  parent: Bodic.Unit.Container
+  langs:
+  - csharp
+  - vb
+  name: elements
+  nameWithType: Container.elements
+  fullName: Bodic.Unit.Container.elements
+  type: Property
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/Unit/Container.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: elements
+    path: Unit/Container.cs
+    startLine: 21
+  assemblies:
+  - Bodic
+  namespace: Bodic.Unit
+  syntax:
+    content: public List<NCR> elements { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Bodic.Unit.NCR}
+    content.vb: Public Property elements As List(Of NCR)
+  overload: Bodic.Unit.Container.elements*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Bodic.Unit.Container.Item(System.Int32)
+  commentId: P:Bodic.Unit.Container.Item(System.Int32)
+  id: Item(System.Int32)
+  parent: Bodic.Unit.Container
+  langs:
+  - csharp
+  - vb
+  name: Item[Int32]
+  nameWithType: Container.Item[Int32]
+  fullName: Bodic.Unit.Container.Item[System.Int32]
+  type: Property
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/Unit/Container.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: this[]
+    path: Unit/Container.cs
+    startLine: 24
+  assemblies:
+  - Bodic
+  namespace: Bodic.Unit
+  syntax:
+    content: public NCR this[int i] { get; }
+    parameters:
+    - id: i
+      type: System.Int32
+    return:
+      type: Bodic.Unit.NCR
+    content.vb: Public ReadOnly Property Item(i As Integer) As NCR
+  overload: Bodic.Unit.Container.Item*
+  nameWithType.vb: Container.Item(Int32)
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: Bodic.Unit.Container.Item(System.Int32)
+  name.vb: Item(Int32)
+- uid: Bodic.Unit.Container.#ctor
+  commentId: M:Bodic.Unit.Container.#ctor
+  id: '#ctor'
+  parent: Bodic.Unit.Container
+  langs:
+  - csharp
+  - vb
+  name: Container()
+  nameWithType: Container.Container()
+  fullName: Bodic.Unit.Container.Container()
+  type: Constructor
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/Unit/Container.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: .ctor
+    path: Unit/Container.cs
+    startLine: 31
+  assemblies:
+  - Bodic
+  namespace: Bodic.Unit
+  syntax:
+    content: public Container()
+    content.vb: Public Sub New
+  overload: Bodic.Unit.Container.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Bodic.Unit.Container.Append(Bodic.Unit.Note)
+  commentId: M:Bodic.Unit.Container.Append(Bodic.Unit.Note)
+  id: Append(Bodic.Unit.Note)
+  parent: Bodic.Unit.Container
+  langs:
+  - csharp
+  - vb
+  name: Append(Note)
+  nameWithType: Container.Append(Note)
+  fullName: Bodic.Unit.Container.Append(Bodic.Unit.Note)
+  type: Method
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/Unit/Container.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: Append
+    path: Unit/Container.cs
+    startLine: 37
+  assemblies:
+  - Bodic
+  namespace: Bodic.Unit
+  syntax:
+    content: public void Append(Note note)
+    parameters:
+    - id: note
+      type: Bodic.Unit.Note
+    content.vb: Public Sub Append(note As Note)
+  overload: Bodic.Unit.Container.Append*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Bodic.Unit.Container.Append(Bodic.Unit.Chord)
+  commentId: M:Bodic.Unit.Container.Append(Bodic.Unit.Chord)
+  id: Append(Bodic.Unit.Chord)
+  parent: Bodic.Unit.Container
+  langs:
+  - csharp
+  - vb
+  name: Append(Chord)
+  nameWithType: Container.Append(Chord)
+  fullName: Bodic.Unit.Container.Append(Bodic.Unit.Chord)
+  type: Method
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/Unit/Container.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: Append
+    path: Unit/Container.cs
+    startLine: 42
+  assemblies:
+  - Bodic
+  namespace: Bodic.Unit
+  syntax:
+    content: public void Append(Chord chord)
+    parameters:
+    - id: chord
+      type: Bodic.Unit.Chord
+    content.vb: Public Sub Append(chord As Chord)
+  overload: Bodic.Unit.Container.Append*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Bodic.Unit.Container.ToBachStringPitch
+  commentId: M:Bodic.Unit.Container.ToBachStringPitch
+  id: ToBachStringPitch
+  parent: Bodic.Unit.Container
+  langs:
+  - csharp
+  - vb
+  name: ToBachStringPitch()
+  nameWithType: Container.ToBachStringPitch()
+  fullName: Bodic.Unit.Container.ToBachStringPitch()
+  type: Method
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/Unit/Container.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: ToBachStringPitch
+    path: Unit/Container.cs
+    startLine: 47
+  assemblies:
+  - Bodic
+  namespace: Bodic.Unit
+  syntax:
+    content: public string ToBachStringPitch()
+    return:
+      type: System.String
+    content.vb: Public Function ToBachStringPitch As String
+  overload: Bodic.Unit.Container.ToBachStringPitch*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Bodic.Unit.Container.ToBachStringDuration
+  commentId: M:Bodic.Unit.Container.ToBachStringDuration
+  id: ToBachStringDuration
+  parent: Bodic.Unit.Container
+  langs:
+  - csharp
+  - vb
+  name: ToBachStringDuration()
+  nameWithType: Container.ToBachStringDuration()
+  fullName: Bodic.Unit.Container.ToBachStringDuration()
+  type: Method
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/Unit/Container.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: ToBachStringDuration
+    path: Unit/Container.cs
+    startLine: 52
+  assemblies:
+  - Bodic
+  namespace: Bodic.Unit
+  syntax:
+    content: public string ToBachStringDuration()
+    return:
+      type: System.String
+    content.vb: Public Function ToBachStringDuration As String
+  overload: Bodic.Unit.Container.ToBachStringDuration*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Bodic.Unit.Container.ToBachStringVelocity
+  commentId: M:Bodic.Unit.Container.ToBachStringVelocity
+  id: ToBachStringVelocity
+  parent: Bodic.Unit.Container
+  langs:
+  - csharp
+  - vb
+  name: ToBachStringVelocity()
+  nameWithType: Container.ToBachStringVelocity()
+  fullName: Bodic.Unit.Container.ToBachStringVelocity()
+  type: Method
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/Unit/Container.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: ToBachStringVelocity
+    path: Unit/Container.cs
+    startLine: 57
+  assemblies:
+  - Bodic
+  namespace: Bodic.Unit
+  syntax:
+    content: public string ToBachStringVelocity()
+    return:
+      type: System.String
+    content.vb: Public Function ToBachStringVelocity As String
+  overload: Bodic.Unit.Container.ToBachStringVelocity*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Bodic.Unit
+  commentId: N:Bodic.Unit
+  name: Bodic.Unit
+  nameWithType: Bodic.Unit
+  fullName: Bodic.Unit
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Bodic.Unit.Component
+  commentId: T:Bodic.Unit.Component
+  parent: Bodic.Unit
+  name: Component
+  nameWithType: Component
+  fullName: Bodic.Unit.Component
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Bodic.Unit.Container.elements*
+  commentId: Overload:Bodic.Unit.Container.elements
+  name: elements
+  nameWithType: Container.elements
+  fullName: Bodic.Unit.Container.elements
+- uid: System.Collections.Generic.List{Bodic.Unit.NCR}
+  commentId: T:System.Collections.Generic.List{Bodic.Unit.NCR}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<NCR>
+  nameWithType: List<NCR>
+  fullName: System.Collections.Generic.List<Bodic.Unit.NCR>
+  nameWithType.vb: List(Of NCR)
+  fullName.vb: System.Collections.Generic.List(Of Bodic.Unit.NCR)
+  name.vb: List(Of NCR)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Bodic.Unit.NCR
+    name: NCR
+    nameWithType: NCR
+    fullName: Bodic.Unit.NCR
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Bodic.Unit.NCR
+    name: NCR
+    nameWithType: NCR
+    fullName: Bodic.Unit.NCR
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Bodic.Unit.Container.Item*
+  commentId: Overload:Bodic.Unit.Container.Item
+  name: Item
+  nameWithType: Container.Item
+  fullName: Bodic.Unit.Container.Item
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Bodic.Unit.NCR
+  commentId: T:Bodic.Unit.NCR
+  parent: Bodic.Unit
+  name: NCR
+  nameWithType: NCR
+  fullName: Bodic.Unit.NCR
+- uid: Bodic.Unit.Container.#ctor*
+  commentId: Overload:Bodic.Unit.Container.#ctor
+  name: Container
+  nameWithType: Container.Container
+  fullName: Bodic.Unit.Container.Container
+- uid: Bodic.Unit.Container.Append*
+  commentId: Overload:Bodic.Unit.Container.Append
+  name: Append
+  nameWithType: Container.Append
+  fullName: Bodic.Unit.Container.Append
+- uid: Bodic.Unit.Note
+  commentId: T:Bodic.Unit.Note
+  parent: Bodic.Unit
+  name: Note
+  nameWithType: Note
+  fullName: Bodic.Unit.Note
+- uid: Bodic.Unit.Chord
+  commentId: T:Bodic.Unit.Chord
+  parent: Bodic.Unit
+  name: Chord
+  nameWithType: Chord
+  fullName: Bodic.Unit.Chord
+- uid: Bodic.Unit.Container.ToBachStringPitch*
+  commentId: Overload:Bodic.Unit.Container.ToBachStringPitch
+  name: ToBachStringPitch
+  nameWithType: Container.ToBachStringPitch
+  fullName: Bodic.Unit.Container.ToBachStringPitch
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Bodic.Unit.Container.ToBachStringDuration*
+  commentId: Overload:Bodic.Unit.Container.ToBachStringDuration
+  name: ToBachStringDuration
+  nameWithType: Container.ToBachStringDuration
+  fullName: Bodic.Unit.Container.ToBachStringDuration
+- uid: Bodic.Unit.Container.ToBachStringVelocity*
+  commentId: Overload:Bodic.Unit.Container.ToBachStringVelocity
+  name: ToBachStringVelocity
+  nameWithType: Container.ToBachStringVelocity
+  fullName: Bodic.Unit.Container.ToBachStringVelocity

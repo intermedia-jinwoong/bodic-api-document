@@ -1,0 +1,1048 @@
+### YamlMime:ManagedReference
+items:
+- uid: Bodic.Conversion
+  commentId: T:Bodic.Conversion
+  id: Conversion
+  parent: Bodic
+  children:
+  - Bodic.Conversion.FrequencyToMidiCent(System.Double)
+  - Bodic.Conversion.IntegersToPitchClassStrings(System.Collections.Generic.List{System.Int32})
+  - Bodic.Conversion.IntegersToPitchStrings(System.Collections.Generic.List{System.Int32})
+  - Bodic.Conversion.IntegerToPitchClassString(System.Int32)
+  - Bodic.Conversion.IntegerToPitchString(System.Int32)
+  - Bodic.Conversion.MidiCentToFrequency(System.Int32)
+  - Bodic.Conversion.MillisecondsToNoteDuration(System.Single,System.Single)
+  - Bodic.Conversion.NoteDurationToMillisecond(System.Single,System.Int32)
+  - Bodic.Conversion.PitchClassStringToInteger(System.String)
+  - Bodic.Conversion.PitchStringsToIntegers(System.Collections.Generic.List{System.String})
+  - Bodic.Conversion.PitchStringToInteger(System.String)
+  - Bodic.Conversion.PitchToPitchClassForm(System.Collections.Generic.List{System.Int32})
+  langs:
+  - csharp
+  - vb
+  name: Conversion
+  nameWithType: Conversion
+  fullName: Bodic.Conversion
+  type: Class
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/BodicComposition.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: Conversion
+    path: BodicComposition.cs
+    startLine: 169
+  assemblies:
+  - Bodic
+  namespace: Bodic
+  syntax:
+    content: public static class Conversion
+    content.vb: Public Module Conversion
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Bodic.Conversion.PitchStringToInteger(System.String)
+  commentId: M:Bodic.Conversion.PitchStringToInteger(System.String)
+  id: PitchStringToInteger(System.String)
+  parent: Bodic.Conversion
+  langs:
+  - csharp
+  - vb
+  name: PitchStringToInteger(String)
+  nameWithType: Conversion.PitchStringToInteger(String)
+  fullName: Bodic.Conversion.PitchStringToInteger(System.String)
+  type: Method
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/BodicComposition.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: PitchStringToInteger
+    path: BodicComposition.cs
+    startLine: 177
+  assemblies:
+  - Bodic
+  namespace: Bodic
+  summary: "\nConverts pitch string into integer format. For example, C4 will be converted into 60.\n"
+  example: []
+  syntax:
+    content: public static int PitchStringToInteger(string pitchString)
+    parameters:
+    - id: pitchString
+      type: System.String
+      description: ''
+    return:
+      type: System.Int32
+      description: ''
+    content.vb: Public Shared Function PitchStringToInteger(pitchString As String) As Integer
+  overload: Bodic.Conversion.PitchStringToInteger*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Bodic.Conversion.PitchStringsToIntegers(System.Collections.Generic.List{System.String})
+  commentId: M:Bodic.Conversion.PitchStringsToIntegers(System.Collections.Generic.List{System.String})
+  id: PitchStringsToIntegers(System.Collections.Generic.List{System.String})
+  parent: Bodic.Conversion
+  langs:
+  - csharp
+  - vb
+  name: PitchStringsToIntegers(List<String>)
+  nameWithType: Conversion.PitchStringsToIntegers(List<String>)
+  fullName: Bodic.Conversion.PitchStringsToIntegers(System.Collections.Generic.List<System.String>)
+  type: Method
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/BodicComposition.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: PitchStringsToIntegers
+    path: BodicComposition.cs
+    startLine: 214
+  assemblies:
+  - Bodic
+  namespace: Bodic
+  syntax:
+    content: public static List<int> PitchStringsToIntegers(List<string> pitchStringSeq)
+    parameters:
+    - id: pitchStringSeq
+      type: System.Collections.Generic.List{System.String}
+    return:
+      type: System.Collections.Generic.List{System.Int32}
+    content.vb: Public Shared Function PitchStringsToIntegers(pitchStringSeq As List(Of String)) As List(Of Integer)
+  overload: Bodic.Conversion.PitchStringsToIntegers*
+  nameWithType.vb: Conversion.PitchStringsToIntegers(List(Of String))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Bodic.Conversion.PitchStringsToIntegers(System.Collections.Generic.List(Of System.String))
+  name.vb: PitchStringsToIntegers(List(Of String))
+- uid: Bodic.Conversion.IntegerToPitchString(System.Int32)
+  commentId: M:Bodic.Conversion.IntegerToPitchString(System.Int32)
+  id: IntegerToPitchString(System.Int32)
+  parent: Bodic.Conversion
+  langs:
+  - csharp
+  - vb
+  name: IntegerToPitchString(Int32)
+  nameWithType: Conversion.IntegerToPitchString(Int32)
+  fullName: Bodic.Conversion.IntegerToPitchString(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/BodicComposition.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: IntegerToPitchString
+    path: BodicComposition.cs
+    startLine: 227
+  assemblies:
+  - Bodic
+  namespace: Bodic
+  syntax:
+    content: public static string IntegerToPitchString(int pitchInt)
+    parameters:
+    - id: pitchInt
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: Public Shared Function IntegerToPitchString(pitchInt As Integer) As String
+  overload: Bodic.Conversion.IntegerToPitchString*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Bodic.Conversion.IntegersToPitchStrings(System.Collections.Generic.List{System.Int32})
+  commentId: M:Bodic.Conversion.IntegersToPitchStrings(System.Collections.Generic.List{System.Int32})
+  id: IntegersToPitchStrings(System.Collections.Generic.List{System.Int32})
+  parent: Bodic.Conversion
+  langs:
+  - csharp
+  - vb
+  name: IntegersToPitchStrings(List<Int32>)
+  nameWithType: Conversion.IntegersToPitchStrings(List<Int32>)
+  fullName: Bodic.Conversion.IntegersToPitchStrings(System.Collections.Generic.List<System.Int32>)
+  type: Method
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/BodicComposition.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: IntegersToPitchStrings
+    path: BodicComposition.cs
+    startLine: 236
+  assemblies:
+  - Bodic
+  namespace: Bodic
+  syntax:
+    content: public static List<string> IntegersToPitchStrings(List<int> pitchIntegerSequence)
+    parameters:
+    - id: pitchIntegerSequence
+      type: System.Collections.Generic.List{System.Int32}
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: Public Shared Function IntegersToPitchStrings(pitchIntegerSequence As List(Of Integer)) As List(Of String)
+  overload: Bodic.Conversion.IntegersToPitchStrings*
+  nameWithType.vb: Conversion.IntegersToPitchStrings(List(Of Int32))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Bodic.Conversion.IntegersToPitchStrings(System.Collections.Generic.List(Of System.Int32))
+  name.vb: IntegersToPitchStrings(List(Of Int32))
+- uid: Bodic.Conversion.PitchClassStringToInteger(System.String)
+  commentId: M:Bodic.Conversion.PitchClassStringToInteger(System.String)
+  id: PitchClassStringToInteger(System.String)
+  parent: Bodic.Conversion
+  langs:
+  - csharp
+  - vb
+  name: PitchClassStringToInteger(String)
+  nameWithType: Conversion.PitchClassStringToInteger(String)
+  fullName: Bodic.Conversion.PitchClassStringToInteger(System.String)
+  type: Method
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/BodicComposition.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: PitchClassStringToInteger
+    path: BodicComposition.cs
+    startLine: 251
+  assemblies:
+  - Bodic
+  namespace: Bodic
+  summary: "\nConverts pitch-class string into integer format. For example, C will be converted into 0.\n"
+  example: []
+  syntax:
+    content: public static int PitchClassStringToInteger(string pitchClassString)
+    parameters:
+    - id: pitchClassString
+      type: System.String
+      description: ''
+    return:
+      type: System.Int32
+      description: ''
+    content.vb: Public Shared Function PitchClassStringToInteger(pitchClassString As String) As Integer
+  overload: Bodic.Conversion.PitchClassStringToInteger*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Bodic.Conversion.IntegerToPitchClassString(System.Int32)
+  commentId: M:Bodic.Conversion.IntegerToPitchClassString(System.Int32)
+  id: IntegerToPitchClassString(System.Int32)
+  parent: Bodic.Conversion
+  langs:
+  - csharp
+  - vb
+  name: IntegerToPitchClassString(Int32)
+  nameWithType: Conversion.IntegerToPitchClassString(Int32)
+  fullName: Bodic.Conversion.IntegerToPitchClassString(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/BodicComposition.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: IntegerToPitchClassString
+    path: BodicComposition.cs
+    startLine: 279
+  assemblies:
+  - Bodic
+  namespace: Bodic
+  syntax:
+    content: public static string IntegerToPitchClassString(int pcInt)
+    parameters:
+    - id: pcInt
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: Public Shared Function IntegerToPitchClassString(pcInt As Integer) As String
+  overload: Bodic.Conversion.IntegerToPitchClassString*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Bodic.Conversion.IntegersToPitchClassStrings(System.Collections.Generic.List{System.Int32})
+  commentId: M:Bodic.Conversion.IntegersToPitchClassStrings(System.Collections.Generic.List{System.Int32})
+  id: IntegersToPitchClassStrings(System.Collections.Generic.List{System.Int32})
+  parent: Bodic.Conversion
+  langs:
+  - csharp
+  - vb
+  name: IntegersToPitchClassStrings(List<Int32>)
+  nameWithType: Conversion.IntegersToPitchClassStrings(List<Int32>)
+  fullName: Bodic.Conversion.IntegersToPitchClassStrings(System.Collections.Generic.List<System.Int32>)
+  type: Method
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/BodicComposition.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: IntegersToPitchClassStrings
+    path: BodicComposition.cs
+    startLine: 285
+  assemblies:
+  - Bodic
+  namespace: Bodic
+  syntax:
+    content: public static List<string> IntegersToPitchClassStrings(List<int> pcIntSeq)
+    parameters:
+    - id: pcIntSeq
+      type: System.Collections.Generic.List{System.Int32}
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: Public Shared Function IntegersToPitchClassStrings(pcIntSeq As List(Of Integer)) As List(Of String)
+  overload: Bodic.Conversion.IntegersToPitchClassStrings*
+  nameWithType.vb: Conversion.IntegersToPitchClassStrings(List(Of Int32))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Bodic.Conversion.IntegersToPitchClassStrings(System.Collections.Generic.List(Of System.Int32))
+  name.vb: IntegersToPitchClassStrings(List(Of Int32))
+- uid: Bodic.Conversion.PitchToPitchClassForm(System.Collections.Generic.List{System.Int32})
+  commentId: M:Bodic.Conversion.PitchToPitchClassForm(System.Collections.Generic.List{System.Int32})
+  id: PitchToPitchClassForm(System.Collections.Generic.List{System.Int32})
+  parent: Bodic.Conversion
+  langs:
+  - csharp
+  - vb
+  name: PitchToPitchClassForm(List<Int32>)
+  nameWithType: Conversion.PitchToPitchClassForm(List<Int32>)
+  fullName: Bodic.Conversion.PitchToPitchClassForm(System.Collections.Generic.List<System.Int32>)
+  type: Method
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/BodicComposition.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: PitchToPitchClassForm
+    path: BodicComposition.cs
+    startLine: 301
+  assemblies:
+  - Bodic
+  namespace: Bodic
+  summary: "\nTake a collection of pitches and convert each pitch to pitch class form.\n"
+  example: []
+  syntax:
+    content: public static List<int> PitchToPitchClassForm(List<int> pitchSet)
+    parameters:
+    - id: pitchSet
+      type: System.Collections.Generic.List{System.Int32}
+      description: ''
+    return:
+      type: System.Collections.Generic.List{System.Int32}
+      description: ''
+    content.vb: Public Shared Function PitchToPitchClassForm(pitchSet As List(Of Integer)) As List(Of Integer)
+  overload: Bodic.Conversion.PitchToPitchClassForm*
+  nameWithType.vb: Conversion.PitchToPitchClassForm(List(Of Int32))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Bodic.Conversion.PitchToPitchClassForm(System.Collections.Generic.List(Of System.Int32))
+  name.vb: PitchToPitchClassForm(List(Of Int32))
+- uid: Bodic.Conversion.MidiCentToFrequency(System.Int32)
+  commentId: M:Bodic.Conversion.MidiCentToFrequency(System.Int32)
+  id: MidiCentToFrequency(System.Int32)
+  parent: Bodic.Conversion
+  langs:
+  - csharp
+  - vb
+  name: MidiCentToFrequency(Int32)
+  nameWithType: Conversion.MidiCentToFrequency(Int32)
+  fullName: Bodic.Conversion.MidiCentToFrequency(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/BodicComposition.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: MidiCentToFrequency
+    path: BodicComposition.cs
+    startLine: 313
+  assemblies:
+  - Bodic
+  namespace: Bodic
+  syntax:
+    content: public static double MidiCentToFrequency(int midiCent)
+    parameters:
+    - id: midiCent
+      type: System.Int32
+    return:
+      type: System.Double
+    content.vb: Public Shared Function MidiCentToFrequency(midiCent As Integer) As Double
+  overload: Bodic.Conversion.MidiCentToFrequency*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Bodic.Conversion.FrequencyToMidiCent(System.Double)
+  commentId: M:Bodic.Conversion.FrequencyToMidiCent(System.Double)
+  id: FrequencyToMidiCent(System.Double)
+  parent: Bodic.Conversion
+  langs:
+  - csharp
+  - vb
+  name: FrequencyToMidiCent(Double)
+  nameWithType: Conversion.FrequencyToMidiCent(Double)
+  fullName: Bodic.Conversion.FrequencyToMidiCent(System.Double)
+  type: Method
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/BodicComposition.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: FrequencyToMidiCent
+    path: BodicComposition.cs
+    startLine: 319
+  assemblies:
+  - Bodic
+  namespace: Bodic
+  syntax:
+    content: public static int FrequencyToMidiCent(double freq)
+    parameters:
+    - id: freq
+      type: System.Double
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function FrequencyToMidiCent(freq As Double) As Integer
+  overload: Bodic.Conversion.FrequencyToMidiCent*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Bodic.Conversion.NoteDurationToMillisecond(System.Single,System.Int32)
+  commentId: M:Bodic.Conversion.NoteDurationToMillisecond(System.Single,System.Int32)
+  id: NoteDurationToMillisecond(System.Single,System.Int32)
+  parent: Bodic.Conversion
+  langs:
+  - csharp
+  - vb
+  name: NoteDurationToMillisecond(Single, Int32)
+  nameWithType: Conversion.NoteDurationToMillisecond(Single, Int32)
+  fullName: Bodic.Conversion.NoteDurationToMillisecond(System.Single, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/BodicComposition.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: NoteDurationToMillisecond
+    path: BodicComposition.cs
+    startLine: 327
+  assemblies:
+  - Bodic
+  namespace: Bodic
+  syntax:
+    content: public static float NoteDurationToMillisecond(float noteDuration, int bpm)
+    parameters:
+    - id: noteDuration
+      type: System.Single
+    - id: bpm
+      type: System.Int32
+    return:
+      type: System.Single
+    content.vb: Public Shared Function NoteDurationToMillisecond(noteDuration As Single, bpm As Integer) As Single
+  overload: Bodic.Conversion.NoteDurationToMillisecond*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Bodic.Conversion.MillisecondsToNoteDuration(System.Single,System.Single)
+  commentId: M:Bodic.Conversion.MillisecondsToNoteDuration(System.Single,System.Single)
+  id: MillisecondsToNoteDuration(System.Single,System.Single)
+  parent: Bodic.Conversion
+  langs:
+  - csharp
+  - vb
+  name: MillisecondsToNoteDuration(Single, Single)
+  nameWithType: Conversion.MillisecondsToNoteDuration(Single, Single)
+  fullName: Bodic.Conversion.MillisecondsToNoteDuration(System.Single, System.Single)
+  type: Method
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/BodicComposition.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: MillisecondsToNoteDuration
+    path: BodicComposition.cs
+    startLine: 337
+  assemblies:
+  - Bodic
+  namespace: Bodic
+  syntax:
+    content: public static float MillisecondsToNoteDuration(float ms, float bpm)
+    parameters:
+    - id: ms
+      type: System.Single
+    - id: bpm
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function MillisecondsToNoteDuration(ms As Single, bpm As Single) As Single
+  overload: Bodic.Conversion.MillisecondsToNoteDuration*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Bodic
+  commentId: N:Bodic
+  name: Bodic
+  nameWithType: Bodic
+  fullName: Bodic
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Bodic.Conversion.PitchStringToInteger*
+  commentId: Overload:Bodic.Conversion.PitchStringToInteger
+  name: PitchStringToInteger
+  nameWithType: Conversion.PitchStringToInteger
+  fullName: Bodic.Conversion.PitchStringToInteger
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Bodic.Conversion.PitchStringsToIntegers*
+  commentId: Overload:Bodic.Conversion.PitchStringsToIntegers
+  name: PitchStringsToIntegers
+  nameWithType: Conversion.PitchStringsToIntegers
+  fullName: Bodic.Conversion.PitchStringsToIntegers
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<String>
+  nameWithType: List<String>
+  fullName: System.Collections.Generic.List<System.String>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of System.String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List{System.Int32}
+  commentId: T:System.Collections.Generic.List{System.Int32}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Int32>
+  nameWithType: List<Int32>
+  fullName: System.Collections.Generic.List<System.Int32>
+  nameWithType.vb: List(Of Int32)
+  fullName.vb: System.Collections.Generic.List(Of System.Int32)
+  name.vb: List(Of Int32)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Bodic.Conversion.IntegerToPitchString*
+  commentId: Overload:Bodic.Conversion.IntegerToPitchString
+  name: IntegerToPitchString
+  nameWithType: Conversion.IntegerToPitchString
+  fullName: Bodic.Conversion.IntegerToPitchString
+- uid: Bodic.Conversion.IntegersToPitchStrings*
+  commentId: Overload:Bodic.Conversion.IntegersToPitchStrings
+  name: IntegersToPitchStrings
+  nameWithType: Conversion.IntegersToPitchStrings
+  fullName: Bodic.Conversion.IntegersToPitchStrings
+- uid: Bodic.Conversion.PitchClassStringToInteger*
+  commentId: Overload:Bodic.Conversion.PitchClassStringToInteger
+  name: PitchClassStringToInteger
+  nameWithType: Conversion.PitchClassStringToInteger
+  fullName: Bodic.Conversion.PitchClassStringToInteger
+- uid: Bodic.Conversion.IntegerToPitchClassString*
+  commentId: Overload:Bodic.Conversion.IntegerToPitchClassString
+  name: IntegerToPitchClassString
+  nameWithType: Conversion.IntegerToPitchClassString
+  fullName: Bodic.Conversion.IntegerToPitchClassString
+- uid: Bodic.Conversion.IntegersToPitchClassStrings*
+  commentId: Overload:Bodic.Conversion.IntegersToPitchClassStrings
+  name: IntegersToPitchClassStrings
+  nameWithType: Conversion.IntegersToPitchClassStrings
+  fullName: Bodic.Conversion.IntegersToPitchClassStrings
+- uid: Bodic.Conversion.PitchToPitchClassForm*
+  commentId: Overload:Bodic.Conversion.PitchToPitchClassForm
+  name: PitchToPitchClassForm
+  nameWithType: Conversion.PitchToPitchClassForm
+  fullName: Bodic.Conversion.PitchToPitchClassForm
+- uid: Bodic.Conversion.MidiCentToFrequency*
+  commentId: Overload:Bodic.Conversion.MidiCentToFrequency
+  name: MidiCentToFrequency
+  nameWithType: Conversion.MidiCentToFrequency
+  fullName: Bodic.Conversion.MidiCentToFrequency
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
+- uid: Bodic.Conversion.FrequencyToMidiCent*
+  commentId: Overload:Bodic.Conversion.FrequencyToMidiCent
+  name: FrequencyToMidiCent
+  nameWithType: Conversion.FrequencyToMidiCent
+  fullName: Bodic.Conversion.FrequencyToMidiCent
+- uid: Bodic.Conversion.NoteDurationToMillisecond*
+  commentId: Overload:Bodic.Conversion.NoteDurationToMillisecond
+  name: NoteDurationToMillisecond
+  nameWithType: Conversion.NoteDurationToMillisecond
+  fullName: Bodic.Conversion.NoteDurationToMillisecond
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: Bodic.Conversion.MillisecondsToNoteDuration*
+  commentId: Overload:Bodic.Conversion.MillisecondsToNoteDuration
+  name: MillisecondsToNoteDuration
+  nameWithType: Conversion.MillisecondsToNoteDuration
+  fullName: Bodic.Conversion.MillisecondsToNoteDuration

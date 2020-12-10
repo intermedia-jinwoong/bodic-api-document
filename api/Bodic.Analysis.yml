@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: Bodic.Analysis
+  commentId: N:Bodic.Analysis
+  id: Bodic.Analysis
+  children:
+  - Bodic.Analysis.Analysis
+  langs:
+  - csharp
+  - vb
+  name: Bodic.Analysis
+  nameWithType: Bodic.Analysis
+  fullName: Bodic.Analysis
+  type: Namespace
+  assemblies:
+  - Bodic
+references:
+- uid: Bodic.Analysis.Analysis
+  commentId: T:Bodic.Analysis.Analysis
+  name: Analysis
+  nameWithType: Analysis
+  fullName: Bodic.Analysis.Analysis

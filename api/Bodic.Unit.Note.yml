@@ -1,0 +1,940 @@
+### YamlMime:ManagedReference
+items:
+- uid: Bodic.Unit.Note
+  commentId: T:Bodic.Unit.Note
+  id: Note
+  parent: Bodic.Unit
+  children:
+  - Bodic.Unit.Note.#ctor(System.Int32)
+  - Bodic.Unit.Note.#ctor(System.Int32,System.Single)
+  - Bodic.Unit.Note.#ctor(System.Int32,System.Single,System.Int32)
+  - Bodic.Unit.Note.Copy
+  - Bodic.Unit.Note.Duration
+  - Bodic.Unit.Note.Pitch
+  - Bodic.Unit.Note.ToBachStringDuration
+  - Bodic.Unit.Note.ToBachStringPitch
+  - Bodic.Unit.Note.ToBachStringVelocity
+  - Bodic.Unit.Note.ToString
+  - Bodic.Unit.Note.Velocity
+  langs:
+  - csharp
+  - vb
+  name: Note
+  nameWithType: Note
+  fullName: Bodic.Unit.Note
+  type: Class
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/Unit/Note.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: Note
+    path: Unit/Note.cs
+    startLine: 8
+  assemblies:
+  - Bodic
+  namespace: Bodic.Unit
+  syntax:
+    content: 'public class Note : NCR'
+    content.vb: >-
+      Public Class Note
+          Inherits NCR
+  inheritance:
+  - System.Object
+  - Bodic.Unit.Component
+  - Bodic.Unit.NCR
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Bodic.Unit.Note.Pitch
+  commentId: P:Bodic.Unit.Note.Pitch
+  id: Pitch
+  parent: Bodic.Unit.Note
+  langs:
+  - csharp
+  - vb
+  name: Pitch
+  nameWithType: Note.Pitch
+  fullName: Bodic.Unit.Note.Pitch
+  type: Property
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/Unit/Note.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: Pitch
+    path: Unit/Note.cs
+    startLine: 13
+  assemblies:
+  - Bodic
+  namespace: Bodic.Unit
+  syntax:
+    content: public int Pitch { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Pitch As Integer
+  overload: Bodic.Unit.Note.Pitch*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Bodic.Unit.Note.Duration
+  commentId: P:Bodic.Unit.Note.Duration
+  id: Duration
+  parent: Bodic.Unit.Note
+  langs:
+  - csharp
+  - vb
+  name: Duration
+  nameWithType: Note.Duration
+  fullName: Bodic.Unit.Note.Duration
+  type: Property
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/Unit/Note.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: Duration
+    path: Unit/Note.cs
+    startLine: 14
+  assemblies:
+  - Bodic
+  namespace: Bodic.Unit
+  syntax:
+    content: public override float Duration { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Overrides Property Duration As Single
+  overridden: Bodic.Unit.NCR.Duration
+  overload: Bodic.Unit.Note.Duration*
+  modifiers.csharp:
+  - public
+  - override
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Bodic.Unit.Note.Velocity
+  commentId: P:Bodic.Unit.Note.Velocity
+  id: Velocity
+  parent: Bodic.Unit.Note
+  langs:
+  - csharp
+  - vb
+  name: Velocity
+  nameWithType: Note.Velocity
+  fullName: Bodic.Unit.Note.Velocity
+  type: Property
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/Unit/Note.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: Velocity
+    path: Unit/Note.cs
+    startLine: 16
+  assemblies:
+  - Bodic
+  namespace: Bodic.Unit
+  syntax:
+    content: public int Velocity { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Velocity As Integer
+  overload: Bodic.Unit.Note.Velocity*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Bodic.Unit.Note.#ctor(System.Int32)
+  commentId: M:Bodic.Unit.Note.#ctor(System.Int32)
+  id: '#ctor(System.Int32)'
+  parent: Bodic.Unit.Note
+  langs:
+  - csharp
+  - vb
+  name: Note(Int32)
+  nameWithType: Note.Note(Int32)
+  fullName: Bodic.Unit.Note.Note(System.Int32)
+  type: Constructor
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/Unit/Note.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: .ctor
+    path: Unit/Note.cs
+    startLine: 20
+  assemblies:
+  - Bodic
+  namespace: Bodic.Unit
+  syntax:
+    content: public Note(int pitch)
+    parameters:
+    - id: pitch
+      type: System.Int32
+    content.vb: Public Sub New(pitch As Integer)
+  overload: Bodic.Unit.Note.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Bodic.Unit.Note.#ctor(System.Int32,System.Single)
+  commentId: M:Bodic.Unit.Note.#ctor(System.Int32,System.Single)
+  id: '#ctor(System.Int32,System.Single)'
+  parent: Bodic.Unit.Note
+  langs:
+  - csharp
+  - vb
+  name: Note(Int32, Single)
+  nameWithType: Note.Note(Int32, Single)
+  fullName: Bodic.Unit.Note.Note(System.Int32, System.Single)
+  type: Constructor
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/Unit/Note.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: .ctor
+    path: Unit/Note.cs
+    startLine: 34
+  assemblies:
+  - Bodic
+  namespace: Bodic.Unit
+  syntax:
+    content: public Note(int pitch, float durationInBeat)
+    parameters:
+    - id: pitch
+      type: System.Int32
+    - id: durationInBeat
+      type: System.Single
+    content.vb: Public Sub New(pitch As Integer, durationInBeat As Single)
+  overload: Bodic.Unit.Note.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Bodic.Unit.Note.#ctor(System.Int32,System.Single,System.Int32)
+  commentId: M:Bodic.Unit.Note.#ctor(System.Int32,System.Single,System.Int32)
+  id: '#ctor(System.Int32,System.Single,System.Int32)'
+  parent: Bodic.Unit.Note
+  langs:
+  - csharp
+  - vb
+  name: Note(Int32, Single, Int32)
+  nameWithType: Note.Note(Int32, Single, Int32)
+  fullName: Bodic.Unit.Note.Note(System.Int32, System.Single, System.Int32)
+  type: Constructor
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/Unit/Note.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: .ctor
+    path: Unit/Note.cs
+    startLine: 48
+  assemblies:
+  - Bodic
+  namespace: Bodic.Unit
+  syntax:
+    content: public Note(int pitch, float durationInBeat, int velocity)
+    parameters:
+    - id: pitch
+      type: System.Int32
+    - id: durationInBeat
+      type: System.Single
+    - id: velocity
+      type: System.Int32
+    content.vb: Public Sub New(pitch As Integer, durationInBeat As Single, velocity As Integer)
+  overload: Bodic.Unit.Note.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Bodic.Unit.Note.Copy
+  commentId: M:Bodic.Unit.Note.Copy
+  id: Copy
+  parent: Bodic.Unit.Note
+  langs:
+  - csharp
+  - vb
+  name: Copy()
+  nameWithType: Note.Copy()
+  fullName: Bodic.Unit.Note.Copy()
+  type: Method
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/Unit/Note.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: Copy
+    path: Unit/Note.cs
+    startLine: 63
+  assemblies:
+  - Bodic
+  namespace: Bodic.Unit
+  syntax:
+    content: public override NCR Copy()
+    return:
+      type: Bodic.Unit.NCR
+    content.vb: Public Overrides Function Copy As NCR
+  overridden: Bodic.Unit.NCR.Copy
+  overload: Bodic.Unit.Note.Copy*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Bodic.Unit.Note.ToBachStringPitch
+  commentId: M:Bodic.Unit.Note.ToBachStringPitch
+  id: ToBachStringPitch
+  parent: Bodic.Unit.Note
+  langs:
+  - csharp
+  - vb
+  name: ToBachStringPitch()
+  nameWithType: Note.ToBachStringPitch()
+  fullName: Bodic.Unit.Note.ToBachStringPitch()
+  type: Method
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/Unit/Note.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: ToBachStringPitch
+    path: Unit/Note.cs
+    startLine: 67
+  assemblies:
+  - Bodic
+  namespace: Bodic.Unit
+  syntax:
+    content: public override string ToBachStringPitch()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToBachStringPitch As String
+  overridden: Bodic.Unit.NCR.ToBachStringPitch
+  overload: Bodic.Unit.Note.ToBachStringPitch*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Bodic.Unit.Note.ToBachStringDuration
+  commentId: M:Bodic.Unit.Note.ToBachStringDuration
+  id: ToBachStringDuration
+  parent: Bodic.Unit.Note
+  langs:
+  - csharp
+  - vb
+  name: ToBachStringDuration()
+  nameWithType: Note.ToBachStringDuration()
+  fullName: Bodic.Unit.Note.ToBachStringDuration()
+  type: Method
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/Unit/Note.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: ToBachStringDuration
+    path: Unit/Note.cs
+    startLine: 72
+  assemblies:
+  - Bodic
+  namespace: Bodic.Unit
+  syntax:
+    content: public override string ToBachStringDuration()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToBachStringDuration As String
+  overridden: Bodic.Unit.NCR.ToBachStringDuration
+  overload: Bodic.Unit.Note.ToBachStringDuration*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Bodic.Unit.Note.ToBachStringVelocity
+  commentId: M:Bodic.Unit.Note.ToBachStringVelocity
+  id: ToBachStringVelocity
+  parent: Bodic.Unit.Note
+  langs:
+  - csharp
+  - vb
+  name: ToBachStringVelocity()
+  nameWithType: Note.ToBachStringVelocity()
+  fullName: Bodic.Unit.Note.ToBachStringVelocity()
+  type: Method
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/Unit/Note.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: ToBachStringVelocity
+    path: Unit/Note.cs
+    startLine: 77
+  assemblies:
+  - Bodic
+  namespace: Bodic.Unit
+  syntax:
+    content: public override string ToBachStringVelocity()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToBachStringVelocity As String
+  overridden: Bodic.Unit.NCR.ToBachStringVelocity
+  overload: Bodic.Unit.Note.ToBachStringVelocity*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Bodic.Unit.Note.ToString
+  commentId: M:Bodic.Unit.Note.ToString
+  id: ToString
+  parent: Bodic.Unit.Note
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: Note.ToString()
+  fullName: Bodic.Unit.Note.ToString()
+  type: Method
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/Unit/Note.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: ToString
+    path: Unit/Note.cs
+    startLine: 82
+  assemblies:
+  - Bodic
+  namespace: Bodic.Unit
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString As String
+  overridden: System.Object.ToString
+  overload: Bodic.Unit.Note.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: Bodic.Unit
+  commentId: N:Bodic.Unit
+  name: Bodic.Unit
+  nameWithType: Bodic.Unit
+  fullName: Bodic.Unit
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Bodic.Unit.Component
+  commentId: T:Bodic.Unit.Component
+  parent: Bodic.Unit
+  name: Component
+  nameWithType: Component
+  fullName: Bodic.Unit.Component
+- uid: Bodic.Unit.NCR
+  commentId: T:Bodic.Unit.NCR
+  parent: Bodic.Unit
+  name: NCR
+  nameWithType: NCR
+  fullName: Bodic.Unit.NCR
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Bodic.Unit.Note.Pitch*
+  commentId: Overload:Bodic.Unit.Note.Pitch
+  name: Pitch
+  nameWithType: Note.Pitch
+  fullName: Bodic.Unit.Note.Pitch
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Bodic.Unit.NCR.Duration
+  commentId: P:Bodic.Unit.NCR.Duration
+  parent: Bodic.Unit.NCR
+  name: Duration
+  nameWithType: NCR.Duration
+  fullName: Bodic.Unit.NCR.Duration
+- uid: Bodic.Unit.Note.Duration*
+  commentId: Overload:Bodic.Unit.Note.Duration
+  name: Duration
+  nameWithType: Note.Duration
+  fullName: Bodic.Unit.Note.Duration
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: Bodic.Unit.Note.Velocity*
+  commentId: Overload:Bodic.Unit.Note.Velocity
+  name: Velocity
+  nameWithType: Note.Velocity
+  fullName: Bodic.Unit.Note.Velocity
+- uid: Bodic.Unit.Note.#ctor*
+  commentId: Overload:Bodic.Unit.Note.#ctor
+  name: Note
+  nameWithType: Note.Note
+  fullName: Bodic.Unit.Note.Note
+- uid: Bodic.Unit.NCR.Copy
+  commentId: M:Bodic.Unit.NCR.Copy
+  parent: Bodic.Unit.NCR
+  name: Copy()
+  nameWithType: NCR.Copy()
+  fullName: Bodic.Unit.NCR.Copy()
+  spec.csharp:
+  - uid: Bodic.Unit.NCR.Copy
+    name: Copy
+    nameWithType: NCR.Copy
+    fullName: Bodic.Unit.NCR.Copy
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Bodic.Unit.NCR.Copy
+    name: Copy
+    nameWithType: NCR.Copy
+    fullName: Bodic.Unit.NCR.Copy
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Bodic.Unit.Note.Copy*
+  commentId: Overload:Bodic.Unit.Note.Copy
+  name: Copy
+  nameWithType: Note.Copy
+  fullName: Bodic.Unit.Note.Copy
+- uid: Bodic.Unit.NCR.ToBachStringPitch
+  commentId: M:Bodic.Unit.NCR.ToBachStringPitch
+  parent: Bodic.Unit.NCR
+  name: ToBachStringPitch()
+  nameWithType: NCR.ToBachStringPitch()
+  fullName: Bodic.Unit.NCR.ToBachStringPitch()
+  spec.csharp:
+  - uid: Bodic.Unit.NCR.ToBachStringPitch
+    name: ToBachStringPitch
+    nameWithType: NCR.ToBachStringPitch
+    fullName: Bodic.Unit.NCR.ToBachStringPitch
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Bodic.Unit.NCR.ToBachStringPitch
+    name: ToBachStringPitch
+    nameWithType: NCR.ToBachStringPitch
+    fullName: Bodic.Unit.NCR.ToBachStringPitch
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Bodic.Unit.Note.ToBachStringPitch*
+  commentId: Overload:Bodic.Unit.Note.ToBachStringPitch
+  name: ToBachStringPitch
+  nameWithType: Note.ToBachStringPitch
+  fullName: Bodic.Unit.Note.ToBachStringPitch
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Bodic.Unit.NCR.ToBachStringDuration
+  commentId: M:Bodic.Unit.NCR.ToBachStringDuration
+  parent: Bodic.Unit.NCR
+  name: ToBachStringDuration()
+  nameWithType: NCR.ToBachStringDuration()
+  fullName: Bodic.Unit.NCR.ToBachStringDuration()
+  spec.csharp:
+  - uid: Bodic.Unit.NCR.ToBachStringDuration
+    name: ToBachStringDuration
+    nameWithType: NCR.ToBachStringDuration
+    fullName: Bodic.Unit.NCR.ToBachStringDuration
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Bodic.Unit.NCR.ToBachStringDuration
+    name: ToBachStringDuration
+    nameWithType: NCR.ToBachStringDuration
+    fullName: Bodic.Unit.NCR.ToBachStringDuration
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Bodic.Unit.Note.ToBachStringDuration*
+  commentId: Overload:Bodic.Unit.Note.ToBachStringDuration
+  name: ToBachStringDuration
+  nameWithType: Note.ToBachStringDuration
+  fullName: Bodic.Unit.Note.ToBachStringDuration
+- uid: Bodic.Unit.NCR.ToBachStringVelocity
+  commentId: M:Bodic.Unit.NCR.ToBachStringVelocity
+  parent: Bodic.Unit.NCR
+  name: ToBachStringVelocity()
+  nameWithType: NCR.ToBachStringVelocity()
+  fullName: Bodic.Unit.NCR.ToBachStringVelocity()
+  spec.csharp:
+  - uid: Bodic.Unit.NCR.ToBachStringVelocity
+    name: ToBachStringVelocity
+    nameWithType: NCR.ToBachStringVelocity
+    fullName: Bodic.Unit.NCR.ToBachStringVelocity
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Bodic.Unit.NCR.ToBachStringVelocity
+    name: ToBachStringVelocity
+    nameWithType: NCR.ToBachStringVelocity
+    fullName: Bodic.Unit.NCR.ToBachStringVelocity
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Bodic.Unit.Note.ToBachStringVelocity*
+  commentId: Overload:Bodic.Unit.Note.ToBachStringVelocity
+  name: ToBachStringVelocity
+  nameWithType: Note.ToBachStringVelocity
+  fullName: Bodic.Unit.Note.ToBachStringVelocity
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Bodic.Unit.Note.ToString*
+  commentId: Overload:Bodic.Unit.Note.ToString
+  name: ToString
+  nameWithType: Note.ToString
+  fullName: Bodic.Unit.Note.ToString

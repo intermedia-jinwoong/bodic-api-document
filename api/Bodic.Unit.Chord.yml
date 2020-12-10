@@ -1,0 +1,1510 @@
+### YamlMime:ManagedReference
+items:
+- uid: Bodic.Unit.Chord
+  commentId: T:Bodic.Unit.Chord
+  id: Chord
+  parent: Bodic.Unit
+  children:
+  - Bodic.Unit.Chord.#ctor
+  - Bodic.Unit.Chord.#ctor(System.Collections.Generic.List{Bodic.Unit.Note})
+  - Bodic.Unit.Chord.#ctor(System.Collections.Generic.List{System.Int32},System.Single)
+  - Bodic.Unit.Chord.#ctor(System.Collections.Generic.List{System.String},System.Single)
+  - Bodic.Unit.Chord.#ctor(System.Collections.Generic.List{System.String},System.Single,System.Int32)
+  - Bodic.Unit.Chord.Add(Bodic.Unit.Note)
+  - Bodic.Unit.Chord.Copy
+  - Bodic.Unit.Chord.Duration
+  - Bodic.Unit.Chord.GetEnumerator
+  - Bodic.Unit.Chord.Item(System.Int32)
+  - Bodic.Unit.Chord.Notes
+  - Bodic.Unit.Chord.NotesCount
+  - Bodic.Unit.Chord.SpacingIntervals
+  - Bodic.Unit.Chord.ToBachStringDuration
+  - Bodic.Unit.Chord.ToBachStringPitch
+  - Bodic.Unit.Chord.ToBachStringVelocity
+  - Bodic.Unit.Chord.ToString
+  - Bodic.Unit.Chord.Transpose(System.Int32)
+  - Bodic.Unit.Chord.Velocity
+  langs:
+  - csharp
+  - vb
+  name: Chord
+  nameWithType: Chord
+  fullName: Bodic.Unit.Chord
+  type: Class
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/Unit/Chord.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: Chord
+    path: Unit/Chord.cs
+    startLine: 10
+  assemblies:
+  - Bodic
+  namespace: Bodic.Unit
+  syntax:
+    content: 'public class Chord : NCR, IEnumerable'
+    content.vb: >-
+      Public Class Chord
+          Inherits NCR
+          Implements IEnumerable
+  inheritance:
+  - System.Object
+  - Bodic.Unit.Component
+  - Bodic.Unit.NCR
+  implements:
+  - System.Collections.IEnumerable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Bodic.Unit.Chord.Notes
+  commentId: P:Bodic.Unit.Chord.Notes
+  id: Notes
+  parent: Bodic.Unit.Chord
+  langs:
+  - csharp
+  - vb
+  name: Notes
+  nameWithType: Chord.Notes
+  fullName: Bodic.Unit.Chord.Notes
+  type: Property
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/Unit/Chord.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: Notes
+    path: Unit/Chord.cs
+    startLine: 17
+  assemblies:
+  - Bodic
+  namespace: Bodic.Unit
+  summary: "\nNote members of the chord.\n"
+  example: []
+  syntax:
+    content: public List<Note> Notes { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Bodic.Unit.Note}
+    content.vb: Public Property Notes As List(Of Note)
+  overload: Bodic.Unit.Chord.Notes*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Bodic.Unit.Chord.SpacingIntervals
+  commentId: P:Bodic.Unit.Chord.SpacingIntervals
+  id: SpacingIntervals
+  parent: Bodic.Unit.Chord
+  langs:
+  - csharp
+  - vb
+  name: SpacingIntervals
+  nameWithType: Chord.SpacingIntervals
+  fullName: Bodic.Unit.Chord.SpacingIntervals
+  type: Property
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/Unit/Chord.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: SpacingIntervals
+    path: Unit/Chord.cs
+    startLine: 19
+  assemblies:
+  - Bodic
+  namespace: Bodic.Unit
+  syntax:
+    content: public List<int> SpacingIntervals { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{System.Int32}
+    content.vb: Public ReadOnly Property SpacingIntervals As List(Of Integer)
+  overload: Bodic.Unit.Chord.SpacingIntervals*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Bodic.Unit.Chord.NotesCount
+  commentId: P:Bodic.Unit.Chord.NotesCount
+  id: NotesCount
+  parent: Bodic.Unit.Chord
+  langs:
+  - csharp
+  - vb
+  name: NotesCount
+  nameWithType: Chord.NotesCount
+  fullName: Bodic.Unit.Chord.NotesCount
+  type: Property
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/Unit/Chord.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: NotesCount
+    path: Unit/Chord.cs
+    startLine: 24
+  assemblies:
+  - Bodic
+  namespace: Bodic.Unit
+  syntax:
+    content: public int NotesCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property NotesCount As Integer
+  overload: Bodic.Unit.Chord.NotesCount*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Bodic.Unit.Chord.Duration
+  commentId: P:Bodic.Unit.Chord.Duration
+  id: Duration
+  parent: Bodic.Unit.Chord
+  langs:
+  - csharp
+  - vb
+  name: Duration
+  nameWithType: Chord.Duration
+  fullName: Bodic.Unit.Chord.Duration
+  type: Property
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/Unit/Chord.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: Duration
+    path: Unit/Chord.cs
+    startLine: 26
+  assemblies:
+  - Bodic
+  namespace: Bodic.Unit
+  syntax:
+    content: public override float Duration { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Overrides Property Duration As Single
+  overridden: Bodic.Unit.NCR.Duration
+  overload: Bodic.Unit.Chord.Duration*
+  modifiers.csharp:
+  - public
+  - override
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Bodic.Unit.Chord.Velocity
+  commentId: P:Bodic.Unit.Chord.Velocity
+  id: Velocity
+  parent: Bodic.Unit.Chord
+  langs:
+  - csharp
+  - vb
+  name: Velocity
+  nameWithType: Chord.Velocity
+  fullName: Bodic.Unit.Chord.Velocity
+  type: Property
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/Unit/Chord.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: Velocity
+    path: Unit/Chord.cs
+    startLine: 28
+  assemblies:
+  - Bodic
+  namespace: Bodic.Unit
+  syntax:
+    content: public int Velocity { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Velocity As Integer
+  overload: Bodic.Unit.Chord.Velocity*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Bodic.Unit.Chord.Item(System.Int32)
+  commentId: P:Bodic.Unit.Chord.Item(System.Int32)
+  id: Item(System.Int32)
+  parent: Bodic.Unit.Chord
+  langs:
+  - csharp
+  - vb
+  name: Item[Int32]
+  nameWithType: Chord.Item[Int32]
+  fullName: Bodic.Unit.Chord.Item[System.Int32]
+  type: Property
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/Unit/Chord.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: this[]
+    path: Unit/Chord.cs
+    startLine: 32
+  assemblies:
+  - Bodic
+  namespace: Bodic.Unit
+  syntax:
+    content: public Note this[int i] { get; }
+    parameters:
+    - id: i
+      type: System.Int32
+    return:
+      type: Bodic.Unit.Note
+    content.vb: Public ReadOnly Property Item(i As Integer) As Note
+  overload: Bodic.Unit.Chord.Item*
+  nameWithType.vb: Chord.Item(Int32)
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: Bodic.Unit.Chord.Item(System.Int32)
+  name.vb: Item(Int32)
+- uid: Bodic.Unit.Chord.#ctor
+  commentId: M:Bodic.Unit.Chord.#ctor
+  id: '#ctor'
+  parent: Bodic.Unit.Chord
+  langs:
+  - csharp
+  - vb
+  name: Chord()
+  nameWithType: Chord.Chord()
+  fullName: Bodic.Unit.Chord.Chord()
+  type: Constructor
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/Unit/Chord.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: .ctor
+    path: Unit/Chord.cs
+    startLine: 40
+  assemblies:
+  - Bodic
+  namespace: Bodic.Unit
+  syntax:
+    content: public Chord()
+    content.vb: Public Sub New
+  overload: Bodic.Unit.Chord.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Bodic.Unit.Chord.#ctor(System.Collections.Generic.List{System.Int32},System.Single)
+  commentId: M:Bodic.Unit.Chord.#ctor(System.Collections.Generic.List{System.Int32},System.Single)
+  id: '#ctor(System.Collections.Generic.List{System.Int32},System.Single)'
+  parent: Bodic.Unit.Chord
+  langs:
+  - csharp
+  - vb
+  name: Chord(List<Int32>, Single)
+  nameWithType: Chord.Chord(List<Int32>, Single)
+  fullName: Bodic.Unit.Chord.Chord(System.Collections.Generic.List<System.Int32>, System.Single)
+  type: Constructor
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/Unit/Chord.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: .ctor
+    path: Unit/Chord.cs
+    startLine: 48
+  assemblies:
+  - Bodic
+  namespace: Bodic.Unit
+  syntax:
+    content: public Chord(List<int> pitchSet, float duration)
+    parameters:
+    - id: pitchSet
+      type: System.Collections.Generic.List{System.Int32}
+    - id: duration
+      type: System.Single
+    content.vb: Public Sub New(pitchSet As List(Of Integer), duration As Single)
+  overload: Bodic.Unit.Chord.#ctor*
+  nameWithType.vb: Chord.Chord(List(Of Int32), Single)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Bodic.Unit.Chord.Chord(System.Collections.Generic.List(Of System.Int32), System.Single)
+  name.vb: Chord(List(Of Int32), Single)
+- uid: Bodic.Unit.Chord.#ctor(System.Collections.Generic.List{System.String},System.Single)
+  commentId: M:Bodic.Unit.Chord.#ctor(System.Collections.Generic.List{System.String},System.Single)
+  id: '#ctor(System.Collections.Generic.List{System.String},System.Single)'
+  parent: Bodic.Unit.Chord
+  langs:
+  - csharp
+  - vb
+  name: Chord(List<String>, Single)
+  nameWithType: Chord.Chord(List<String>, Single)
+  fullName: Bodic.Unit.Chord.Chord(System.Collections.Generic.List<System.String>, System.Single)
+  type: Constructor
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/Unit/Chord.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: .ctor
+    path: Unit/Chord.cs
+    startLine: 61
+  assemblies:
+  - Bodic
+  namespace: Bodic.Unit
+  syntax:
+    content: public Chord(List<string> stringPitchSet, float duration)
+    parameters:
+    - id: stringPitchSet
+      type: System.Collections.Generic.List{System.String}
+    - id: duration
+      type: System.Single
+    content.vb: Public Sub New(stringPitchSet As List(Of String), duration As Single)
+  overload: Bodic.Unit.Chord.#ctor*
+  nameWithType.vb: Chord.Chord(List(Of String), Single)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Bodic.Unit.Chord.Chord(System.Collections.Generic.List(Of System.String), System.Single)
+  name.vb: Chord(List(Of String), Single)
+- uid: Bodic.Unit.Chord.#ctor(System.Collections.Generic.List{System.String},System.Single,System.Int32)
+  commentId: M:Bodic.Unit.Chord.#ctor(System.Collections.Generic.List{System.String},System.Single,System.Int32)
+  id: '#ctor(System.Collections.Generic.List{System.String},System.Single,System.Int32)'
+  parent: Bodic.Unit.Chord
+  langs:
+  - csharp
+  - vb
+  name: Chord(List<String>, Single, Int32)
+  nameWithType: Chord.Chord(List<String>, Single, Int32)
+  fullName: Bodic.Unit.Chord.Chord(System.Collections.Generic.List<System.String>, System.Single, System.Int32)
+  type: Constructor
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/Unit/Chord.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: .ctor
+    path: Unit/Chord.cs
+    startLine: 73
+  assemblies:
+  - Bodic
+  namespace: Bodic.Unit
+  syntax:
+    content: public Chord(List<string> stringPitchSet, float duration, int velocity)
+    parameters:
+    - id: stringPitchSet
+      type: System.Collections.Generic.List{System.String}
+    - id: duration
+      type: System.Single
+    - id: velocity
+      type: System.Int32
+    content.vb: Public Sub New(stringPitchSet As List(Of String), duration As Single, velocity As Integer)
+  overload: Bodic.Unit.Chord.#ctor*
+  nameWithType.vb: Chord.Chord(List(Of String), Single, Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Bodic.Unit.Chord.Chord(System.Collections.Generic.List(Of System.String), System.Single, System.Int32)
+  name.vb: Chord(List(Of String), Single, Int32)
+- uid: Bodic.Unit.Chord.#ctor(System.Collections.Generic.List{Bodic.Unit.Note})
+  commentId: M:Bodic.Unit.Chord.#ctor(System.Collections.Generic.List{Bodic.Unit.Note})
+  id: '#ctor(System.Collections.Generic.List{Bodic.Unit.Note})'
+  parent: Bodic.Unit.Chord
+  langs:
+  - csharp
+  - vb
+  name: Chord(List<Note>)
+  nameWithType: Chord.Chord(List<Note>)
+  fullName: Bodic.Unit.Chord.Chord(System.Collections.Generic.List<Bodic.Unit.Note>)
+  type: Constructor
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/Unit/Chord.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: .ctor
+    path: Unit/Chord.cs
+    startLine: 84
+  assemblies:
+  - Bodic
+  namespace: Bodic.Unit
+  syntax:
+    content: public Chord(List<Note> noteSet)
+    parameters:
+    - id: noteSet
+      type: System.Collections.Generic.List{Bodic.Unit.Note}
+    content.vb: Public Sub New(noteSet As List(Of Note))
+  overload: Bodic.Unit.Chord.#ctor*
+  nameWithType.vb: Chord.Chord(List(Of Note))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Bodic.Unit.Chord.Chord(System.Collections.Generic.List(Of Bodic.Unit.Note))
+  name.vb: Chord(List(Of Note))
+- uid: Bodic.Unit.Chord.GetEnumerator
+  commentId: M:Bodic.Unit.Chord.GetEnumerator
+  id: GetEnumerator
+  parent: Bodic.Unit.Chord
+  langs:
+  - csharp
+  - vb
+  name: GetEnumerator()
+  nameWithType: Chord.GetEnumerator()
+  fullName: Bodic.Unit.Chord.GetEnumerator()
+  type: Method
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/Unit/Chord.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: GetEnumerator
+    path: Unit/Chord.cs
+    startLine: 130
+  assemblies:
+  - Bodic
+  namespace: Bodic.Unit
+  syntax:
+    content: public IEnumerator GetEnumerator()
+    return:
+      type: System.Collections.IEnumerator
+    content.vb: Public Function GetEnumerator As IEnumerator
+  overload: Bodic.Unit.Chord.GetEnumerator*
+  implements:
+  - System.Collections.IEnumerable.GetEnumerator
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Bodic.Unit.Chord.Transpose(System.Int32)
+  commentId: M:Bodic.Unit.Chord.Transpose(System.Int32)
+  id: Transpose(System.Int32)
+  parent: Bodic.Unit.Chord
+  langs:
+  - csharp
+  - vb
+  name: Transpose(Int32)
+  nameWithType: Chord.Transpose(Int32)
+  fullName: Bodic.Unit.Chord.Transpose(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/Unit/Chord.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: Transpose
+    path: Unit/Chord.cs
+    startLine: 140
+  assemblies:
+  - Bodic
+  namespace: Bodic.Unit
+  summary: "\nTranspose\n"
+  example: []
+  syntax:
+    content: public void Transpose(int interval)
+    parameters:
+    - id: interval
+      type: System.Int32
+    content.vb: Public Sub Transpose(interval As Integer)
+  overload: Bodic.Unit.Chord.Transpose*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Bodic.Unit.Chord.Copy
+  commentId: M:Bodic.Unit.Chord.Copy
+  id: Copy
+  parent: Bodic.Unit.Chord
+  langs:
+  - csharp
+  - vb
+  name: Copy()
+  nameWithType: Chord.Copy()
+  fullName: Bodic.Unit.Chord.Copy()
+  type: Method
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/Unit/Chord.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: Copy
+    path: Unit/Chord.cs
+    startLine: 163
+  assemblies:
+  - Bodic
+  namespace: Bodic.Unit
+  syntax:
+    content: public override NCR Copy()
+    return:
+      type: Bodic.Unit.NCR
+    content.vb: Public Overrides Function Copy As NCR
+  overridden: Bodic.Unit.NCR.Copy
+  overload: Bodic.Unit.Chord.Copy*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Bodic.Unit.Chord.Add(Bodic.Unit.Note)
+  commentId: M:Bodic.Unit.Chord.Add(Bodic.Unit.Note)
+  id: Add(Bodic.Unit.Note)
+  parent: Bodic.Unit.Chord
+  langs:
+  - csharp
+  - vb
+  name: Add(Note)
+  nameWithType: Chord.Add(Note)
+  fullName: Bodic.Unit.Chord.Add(Bodic.Unit.Note)
+  type: Method
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/Unit/Chord.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: Add
+    path: Unit/Chord.cs
+    startLine: 173
+  assemblies:
+  - Bodic
+  namespace: Bodic.Unit
+  syntax:
+    content: public void Add(Note newNote)
+    parameters:
+    - id: newNote
+      type: Bodic.Unit.Note
+    content.vb: Public Sub Add(newNote As Note)
+  overload: Bodic.Unit.Chord.Add*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Bodic.Unit.Chord.ToBachStringPitch
+  commentId: M:Bodic.Unit.Chord.ToBachStringPitch
+  id: ToBachStringPitch
+  parent: Bodic.Unit.Chord
+  langs:
+  - csharp
+  - vb
+  name: ToBachStringPitch()
+  nameWithType: Chord.ToBachStringPitch()
+  fullName: Bodic.Unit.Chord.ToBachStringPitch()
+  type: Method
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/Unit/Chord.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: ToBachStringPitch
+    path: Unit/Chord.cs
+    startLine: 182
+  assemblies:
+  - Bodic
+  namespace: Bodic.Unit
+  summary: "\nReturns pitch string in bach llll-style string.\n"
+  example: []
+  syntax:
+    content: public override string ToBachStringPitch()
+    return:
+      type: System.String
+      description: ''
+    content.vb: Public Overrides Function ToBachStringPitch As String
+  overridden: Bodic.Unit.NCR.ToBachStringPitch
+  overload: Bodic.Unit.Chord.ToBachStringPitch*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Bodic.Unit.Chord.ToBachStringDuration
+  commentId: M:Bodic.Unit.Chord.ToBachStringDuration
+  id: ToBachStringDuration
+  parent: Bodic.Unit.Chord
+  langs:
+  - csharp
+  - vb
+  name: ToBachStringDuration()
+  nameWithType: Chord.ToBachStringDuration()
+  fullName: Bodic.Unit.Chord.ToBachStringDuration()
+  type: Method
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/Unit/Chord.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: ToBachStringDuration
+    path: Unit/Chord.cs
+    startLine: 193
+  assemblies:
+  - Bodic
+  namespace: Bodic.Unit
+  summary: "\nReturns duration string in bach llll-style string.\n"
+  example: []
+  syntax:
+    content: public override string ToBachStringDuration()
+    return:
+      type: System.String
+      description: ''
+    content.vb: Public Overrides Function ToBachStringDuration As String
+  overridden: Bodic.Unit.NCR.ToBachStringDuration
+  overload: Bodic.Unit.Chord.ToBachStringDuration*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Bodic.Unit.Chord.ToBachStringVelocity
+  commentId: M:Bodic.Unit.Chord.ToBachStringVelocity
+  id: ToBachStringVelocity
+  parent: Bodic.Unit.Chord
+  langs:
+  - csharp
+  - vb
+  name: ToBachStringVelocity()
+  nameWithType: Chord.ToBachStringVelocity()
+  fullName: Bodic.Unit.Chord.ToBachStringVelocity()
+  type: Method
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/Unit/Chord.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: ToBachStringVelocity
+    path: Unit/Chord.cs
+    startLine: 203
+  assemblies:
+  - Bodic
+  namespace: Bodic.Unit
+  syntax:
+    content: public override string ToBachStringVelocity()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToBachStringVelocity As String
+  overridden: Bodic.Unit.NCR.ToBachStringVelocity
+  overload: Bodic.Unit.Chord.ToBachStringVelocity*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Bodic.Unit.Chord.ToString
+  commentId: M:Bodic.Unit.Chord.ToString
+  id: ToString
+  parent: Bodic.Unit.Chord
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: Chord.ToString()
+  fullName: Bodic.Unit.Chord.ToString()
+  type: Method
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/Unit/Chord.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: ToString
+    path: Unit/Chord.cs
+    startLine: 213
+  assemblies:
+  - Bodic
+  namespace: Bodic.Unit
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString As String
+  overridden: System.Object.ToString
+  overload: Bodic.Unit.Chord.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: Bodic.Unit
+  commentId: N:Bodic.Unit
+  name: Bodic.Unit
+  nameWithType: Bodic.Unit
+  fullName: Bodic.Unit
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Bodic.Unit.Component
+  commentId: T:Bodic.Unit.Component
+  parent: Bodic.Unit
+  name: Component
+  nameWithType: Component
+  fullName: Bodic.Unit.Component
+- uid: Bodic.Unit.NCR
+  commentId: T:Bodic.Unit.NCR
+  parent: Bodic.Unit
+  name: NCR
+  nameWithType: NCR
+  fullName: Bodic.Unit.NCR
+- uid: System.Collections.IEnumerable
+  commentId: T:System.Collections.IEnumerable
+  parent: System.Collections
+  isExternal: true
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.IEnumerable
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+- uid: Bodic.Unit.Chord.Notes*
+  commentId: Overload:Bodic.Unit.Chord.Notes
+  name: Notes
+  nameWithType: Chord.Notes
+  fullName: Bodic.Unit.Chord.Notes
+- uid: System.Collections.Generic.List{Bodic.Unit.Note}
+  commentId: T:System.Collections.Generic.List{Bodic.Unit.Note}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Note>
+  nameWithType: List<Note>
+  fullName: System.Collections.Generic.List<Bodic.Unit.Note>
+  nameWithType.vb: List(Of Note)
+  fullName.vb: System.Collections.Generic.List(Of Bodic.Unit.Note)
+  name.vb: List(Of Note)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Bodic.Unit.Note
+    name: Note
+    nameWithType: Note
+    fullName: Bodic.Unit.Note
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Bodic.Unit.Note
+    name: Note
+    nameWithType: Note
+    fullName: Bodic.Unit.Note
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Bodic.Unit.Chord.SpacingIntervals*
+  commentId: Overload:Bodic.Unit.Chord.SpacingIntervals
+  name: SpacingIntervals
+  nameWithType: Chord.SpacingIntervals
+  fullName: Bodic.Unit.Chord.SpacingIntervals
+- uid: System.Collections.Generic.List{System.Int32}
+  commentId: T:System.Collections.Generic.List{System.Int32}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Int32>
+  nameWithType: List<Int32>
+  fullName: System.Collections.Generic.List<System.Int32>
+  nameWithType.vb: List(Of Int32)
+  fullName.vb: System.Collections.Generic.List(Of System.Int32)
+  name.vb: List(Of Int32)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Bodic.Unit.Chord.NotesCount*
+  commentId: Overload:Bodic.Unit.Chord.NotesCount
+  name: NotesCount
+  nameWithType: Chord.NotesCount
+  fullName: Bodic.Unit.Chord.NotesCount
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Bodic.Unit.NCR.Duration
+  commentId: P:Bodic.Unit.NCR.Duration
+  parent: Bodic.Unit.NCR
+  name: Duration
+  nameWithType: NCR.Duration
+  fullName: Bodic.Unit.NCR.Duration
+- uid: Bodic.Unit.Chord.Duration*
+  commentId: Overload:Bodic.Unit.Chord.Duration
+  name: Duration
+  nameWithType: Chord.Duration
+  fullName: Bodic.Unit.Chord.Duration
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: Bodic.Unit.Chord.Velocity*
+  commentId: Overload:Bodic.Unit.Chord.Velocity
+  name: Velocity
+  nameWithType: Chord.Velocity
+  fullName: Bodic.Unit.Chord.Velocity
+- uid: Bodic.Unit.Chord.Item*
+  commentId: Overload:Bodic.Unit.Chord.Item
+  name: Item
+  nameWithType: Chord.Item
+  fullName: Bodic.Unit.Chord.Item
+- uid: Bodic.Unit.Note
+  commentId: T:Bodic.Unit.Note
+  parent: Bodic.Unit
+  name: Note
+  nameWithType: Note
+  fullName: Bodic.Unit.Note
+- uid: Bodic.Unit.Chord.#ctor*
+  commentId: Overload:Bodic.Unit.Chord.#ctor
+  name: Chord
+  nameWithType: Chord.Chord
+  fullName: Bodic.Unit.Chord.Chord
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<String>
+  nameWithType: List<String>
+  fullName: System.Collections.Generic.List<System.String>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of System.String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Bodic.Unit.Chord.GetEnumerator*
+  commentId: Overload:Bodic.Unit.Chord.GetEnumerator
+  name: GetEnumerator
+  nameWithType: Chord.GetEnumerator
+  fullName: Bodic.Unit.Chord.GetEnumerator
+- uid: System.Collections.IEnumerable.GetEnumerator
+  commentId: M:System.Collections.IEnumerable.GetEnumerator
+  parent: System.Collections.IEnumerable
+  isExternal: true
+  name: GetEnumerator()
+  nameWithType: IEnumerable.GetEnumerator()
+  fullName: System.Collections.IEnumerable.GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.IEnumerable.GetEnumerator
+    name: GetEnumerator
+    nameWithType: IEnumerable.GetEnumerator
+    fullName: System.Collections.IEnumerable.GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.IEnumerable.GetEnumerator
+    name: GetEnumerator
+    nameWithType: IEnumerable.GetEnumerator
+    fullName: System.Collections.IEnumerable.GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.IEnumerator
+  commentId: T:System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  name: IEnumerator
+  nameWithType: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: Bodic.Unit.Chord.Transpose*
+  commentId: Overload:Bodic.Unit.Chord.Transpose
+  name: Transpose
+  nameWithType: Chord.Transpose
+  fullName: Bodic.Unit.Chord.Transpose
+- uid: Bodic.Unit.NCR.Copy
+  commentId: M:Bodic.Unit.NCR.Copy
+  parent: Bodic.Unit.NCR
+  name: Copy()
+  nameWithType: NCR.Copy()
+  fullName: Bodic.Unit.NCR.Copy()
+  spec.csharp:
+  - uid: Bodic.Unit.NCR.Copy
+    name: Copy
+    nameWithType: NCR.Copy
+    fullName: Bodic.Unit.NCR.Copy
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Bodic.Unit.NCR.Copy
+    name: Copy
+    nameWithType: NCR.Copy
+    fullName: Bodic.Unit.NCR.Copy
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Bodic.Unit.Chord.Copy*
+  commentId: Overload:Bodic.Unit.Chord.Copy
+  name: Copy
+  nameWithType: Chord.Copy
+  fullName: Bodic.Unit.Chord.Copy
+- uid: Bodic.Unit.Chord.Add*
+  commentId: Overload:Bodic.Unit.Chord.Add
+  name: Add
+  nameWithType: Chord.Add
+  fullName: Bodic.Unit.Chord.Add
+- uid: Bodic.Unit.NCR.ToBachStringPitch
+  commentId: M:Bodic.Unit.NCR.ToBachStringPitch
+  parent: Bodic.Unit.NCR
+  name: ToBachStringPitch()
+  nameWithType: NCR.ToBachStringPitch()
+  fullName: Bodic.Unit.NCR.ToBachStringPitch()
+  spec.csharp:
+  - uid: Bodic.Unit.NCR.ToBachStringPitch
+    name: ToBachStringPitch
+    nameWithType: NCR.ToBachStringPitch
+    fullName: Bodic.Unit.NCR.ToBachStringPitch
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Bodic.Unit.NCR.ToBachStringPitch
+    name: ToBachStringPitch
+    nameWithType: NCR.ToBachStringPitch
+    fullName: Bodic.Unit.NCR.ToBachStringPitch
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Bodic.Unit.Chord.ToBachStringPitch*
+  commentId: Overload:Bodic.Unit.Chord.ToBachStringPitch
+  name: ToBachStringPitch
+  nameWithType: Chord.ToBachStringPitch
+  fullName: Bodic.Unit.Chord.ToBachStringPitch
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Bodic.Unit.NCR.ToBachStringDuration
+  commentId: M:Bodic.Unit.NCR.ToBachStringDuration
+  parent: Bodic.Unit.NCR
+  name: ToBachStringDuration()
+  nameWithType: NCR.ToBachStringDuration()
+  fullName: Bodic.Unit.NCR.ToBachStringDuration()
+  spec.csharp:
+  - uid: Bodic.Unit.NCR.ToBachStringDuration
+    name: ToBachStringDuration
+    nameWithType: NCR.ToBachStringDuration
+    fullName: Bodic.Unit.NCR.ToBachStringDuration
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Bodic.Unit.NCR.ToBachStringDuration
+    name: ToBachStringDuration
+    nameWithType: NCR.ToBachStringDuration
+    fullName: Bodic.Unit.NCR.ToBachStringDuration
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Bodic.Unit.Chord.ToBachStringDuration*
+  commentId: Overload:Bodic.Unit.Chord.ToBachStringDuration
+  name: ToBachStringDuration
+  nameWithType: Chord.ToBachStringDuration
+  fullName: Bodic.Unit.Chord.ToBachStringDuration
+- uid: Bodic.Unit.NCR.ToBachStringVelocity
+  commentId: M:Bodic.Unit.NCR.ToBachStringVelocity
+  parent: Bodic.Unit.NCR
+  name: ToBachStringVelocity()
+  nameWithType: NCR.ToBachStringVelocity()
+  fullName: Bodic.Unit.NCR.ToBachStringVelocity()
+  spec.csharp:
+  - uid: Bodic.Unit.NCR.ToBachStringVelocity
+    name: ToBachStringVelocity
+    nameWithType: NCR.ToBachStringVelocity
+    fullName: Bodic.Unit.NCR.ToBachStringVelocity
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Bodic.Unit.NCR.ToBachStringVelocity
+    name: ToBachStringVelocity
+    nameWithType: NCR.ToBachStringVelocity
+    fullName: Bodic.Unit.NCR.ToBachStringVelocity
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Bodic.Unit.Chord.ToBachStringVelocity*
+  commentId: Overload:Bodic.Unit.Chord.ToBachStringVelocity
+  name: ToBachStringVelocity
+  nameWithType: Chord.ToBachStringVelocity
+  fullName: Bodic.Unit.Chord.ToBachStringVelocity
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Bodic.Unit.Chord.ToString*
+  commentId: Overload:Bodic.Unit.Chord.ToString
+  name: ToString
+  nameWithType: Chord.ToString
+  fullName: Bodic.Unit.Chord.ToString

@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "ix4cL9CjYMxAiMMnGNn1RHEAXuFdjeXkM8B6DHrKncOTvQiQ2ivIckU/Ie+bSiKN8BRZsryIvAc/HpoDomHg8Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\jinwoong\\source\\repos\\BODIC_Development\\Bodic\\Bodic.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jinwoong\\.nuget\\packages\\docfx.console\\2.56.6\\docfx.console.2.56.6.nupkg.sha512",
+    "C:\\Users\\jinwoong\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\jinwoong\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,1312 @@
+### YamlMime:ManagedReference
+items:
+- uid: Bodic.Unit.PitchClassSet
+  commentId: T:Bodic.Unit.PitchClassSet
+  id: PitchClassSet
+  parent: Bodic.Unit
+  children:
+  - Bodic.Unit.PitchClassSet.#ctor
+  - Bodic.Unit.PitchClassSet.#ctor(System.Collections.Generic.List{System.Int32})
+  - Bodic.Unit.PitchClassSet.#ctor(System.Collections.Generic.List{System.String})
+  - Bodic.Unit.PitchClassSet.ChangeToNormalForm
+  - Bodic.Unit.PitchClassSet.Content
+  - Bodic.Unit.PitchClassSet.GetEnumerator
+  - Bodic.Unit.PitchClassSet.IntervalClassVector
+  - Bodic.Unit.PitchClassSet.IntervalSequence
+  - Bodic.Unit.PitchClassSet.Invert(System.Int32)
+  - Bodic.Unit.PitchClassSet.IsInversionallyRelated(Bodic.Unit.PitchClassSet,Bodic.Unit.PitchClassSet)
+  - Bodic.Unit.PitchClassSet.IsInversionallyRelatedTo(Bodic.Unit.PitchClassSet)
+  - Bodic.Unit.PitchClassSet.IsTransitionallyRelated(Bodic.Unit.PitchClassSet,Bodic.Unit.PitchClassSet)
+  - Bodic.Unit.PitchClassSet.IsTransitionallyRelatedTo(Bodic.Unit.PitchClassSet)
+  - Bodic.Unit.PitchClassSet.Item(System.Int32)
+  - Bodic.Unit.PitchClassSet.NormalForm
+  - Bodic.Unit.PitchClassSet.ToList
+  - Bodic.Unit.PitchClassSet.ToString
+  - Bodic.Unit.PitchClassSet.Transpose(System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: PitchClassSet
+  nameWithType: PitchClassSet
+  fullName: Bodic.Unit.PitchClassSet
+  type: Class
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/Unit/PitchClassSet.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: PitchClassSet
+    path: Unit/PitchClassSet.cs
+    startLine: 9
+  assemblies:
+  - Bodic
+  namespace: Bodic.Unit
+  syntax:
+    content: 'public class PitchClassSet : IEnumerable'
+    content.vb: >-
+      Public Class PitchClassSet
+          Implements IEnumerable
+  inheritance:
+  - System.Object
+  implements:
+  - System.Collections.IEnumerable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Bodic.Unit.PitchClassSet.Content
+  commentId: P:Bodic.Unit.PitchClassSet.Content
+  id: Content
+  parent: Bodic.Unit.PitchClassSet
+  langs:
+  - csharp
+  - vb
+  name: Content
+  nameWithType: PitchClassSet.Content
+  fullName: Bodic.Unit.PitchClassSet.Content
+  type: Property
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/Unit/PitchClassSet.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: Content
+    path: Unit/PitchClassSet.cs
+    startLine: 13
+  assemblies:
+  - Bodic
+  namespace: Bodic.Unit
+  syntax:
+    content: public List<int> Content { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{System.Int32}
+    content.vb: Public Property Content As List(Of Integer)
+  overload: Bodic.Unit.PitchClassSet.Content*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Bodic.Unit.PitchClassSet.NormalForm
+  commentId: P:Bodic.Unit.PitchClassSet.NormalForm
+  id: NormalForm
+  parent: Bodic.Unit.PitchClassSet
+  langs:
+  - csharp
+  - vb
+  name: NormalForm
+  nameWithType: PitchClassSet.NormalForm
+  fullName: Bodic.Unit.PitchClassSet.NormalForm
+  type: Property
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/Unit/PitchClassSet.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: NormalForm
+    path: Unit/PitchClassSet.cs
+    startLine: 14
+  assemblies:
+  - Bodic
+  namespace: Bodic.Unit
+  syntax:
+    content: public PitchClassSet NormalForm { get; }
+    parameters: []
+    return:
+      type: Bodic.Unit.PitchClassSet
+    content.vb: Public ReadOnly Property NormalForm As PitchClassSet
+  overload: Bodic.Unit.PitchClassSet.NormalForm*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Bodic.Unit.PitchClassSet.IntervalClassVector
+  commentId: P:Bodic.Unit.PitchClassSet.IntervalClassVector
+  id: IntervalClassVector
+  parent: Bodic.Unit.PitchClassSet
+  langs:
+  - csharp
+  - vb
+  name: IntervalClassVector
+  nameWithType: PitchClassSet.IntervalClassVector
+  fullName: Bodic.Unit.PitchClassSet.IntervalClassVector
+  type: Property
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/Unit/PitchClassSet.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: IntervalClassVector
+    path: Unit/PitchClassSet.cs
+    startLine: 19
+  assemblies:
+  - Bodic
+  namespace: Bodic.Unit
+  syntax:
+    content: public int[] IntervalClassVector { get; }
+    parameters: []
+    return:
+      type: System.Int32[]
+    content.vb: Public ReadOnly Property IntervalClassVector As Integer()
+  overload: Bodic.Unit.PitchClassSet.IntervalClassVector*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Bodic.Unit.PitchClassSet.Item(System.Int32)
+  commentId: P:Bodic.Unit.PitchClassSet.Item(System.Int32)
+  id: Item(System.Int32)
+  parent: Bodic.Unit.PitchClassSet
+  langs:
+  - csharp
+  - vb
+  name: Item[Int32]
+  nameWithType: PitchClassSet.Item[Int32]
+  fullName: Bodic.Unit.PitchClassSet.Item[System.Int32]
+  type: Property
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/Unit/PitchClassSet.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: this[]
+    path: Unit/PitchClassSet.cs
+    startLine: 26
+  assemblies:
+  - Bodic
+  namespace: Bodic.Unit
+  syntax:
+    content: public int this[int i] { get; }
+    parameters:
+    - id: i
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Item(i As Integer) As Integer
+  overload: Bodic.Unit.PitchClassSet.Item*
+  nameWithType.vb: PitchClassSet.Item(Int32)
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: Bodic.Unit.PitchClassSet.Item(System.Int32)
+  name.vb: Item(Int32)
+- uid: Bodic.Unit.PitchClassSet.#ctor
+  commentId: M:Bodic.Unit.PitchClassSet.#ctor
+  id: '#ctor'
+  parent: Bodic.Unit.PitchClassSet
+  langs:
+  - csharp
+  - vb
+  name: PitchClassSet()
+  nameWithType: PitchClassSet.PitchClassSet()
+  fullName: Bodic.Unit.PitchClassSet.PitchClassSet()
+  type: Constructor
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/Unit/PitchClassSet.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: .ctor
+    path: Unit/PitchClassSet.cs
+    startLine: 34
+  assemblies:
+  - Bodic
+  namespace: Bodic.Unit
+  syntax:
+    content: public PitchClassSet()
+    content.vb: Public Sub New
+  overload: Bodic.Unit.PitchClassSet.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Bodic.Unit.PitchClassSet.#ctor(System.Collections.Generic.List{System.Int32})
+  commentId: M:Bodic.Unit.PitchClassSet.#ctor(System.Collections.Generic.List{System.Int32})
+  id: '#ctor(System.Collections.Generic.List{System.Int32})'
+  parent: Bodic.Unit.PitchClassSet
+  langs:
+  - csharp
+  - vb
+  name: PitchClassSet(List<Int32>)
+  nameWithType: PitchClassSet.PitchClassSet(List<Int32>)
+  fullName: Bodic.Unit.PitchClassSet.PitchClassSet(System.Collections.Generic.List<System.Int32>)
+  type: Constructor
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/Unit/PitchClassSet.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: .ctor
+    path: Unit/PitchClassSet.cs
+    startLine: 39
+  assemblies:
+  - Bodic
+  namespace: Bodic.Unit
+  syntax:
+    content: public PitchClassSet(List<int> pitchClassSet)
+    parameters:
+    - id: pitchClassSet
+      type: System.Collections.Generic.List{System.Int32}
+    content.vb: Public Sub New(pitchClassSet As List(Of Integer))
+  overload: Bodic.Unit.PitchClassSet.#ctor*
+  nameWithType.vb: PitchClassSet.PitchClassSet(List(Of Int32))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Bodic.Unit.PitchClassSet.PitchClassSet(System.Collections.Generic.List(Of System.Int32))
+  name.vb: PitchClassSet(List(Of Int32))
+- uid: Bodic.Unit.PitchClassSet.#ctor(System.Collections.Generic.List{System.String})
+  commentId: M:Bodic.Unit.PitchClassSet.#ctor(System.Collections.Generic.List{System.String})
+  id: '#ctor(System.Collections.Generic.List{System.String})'
+  parent: Bodic.Unit.PitchClassSet
+  langs:
+  - csharp
+  - vb
+  name: PitchClassSet(List<String>)
+  nameWithType: PitchClassSet.PitchClassSet(List<String>)
+  fullName: Bodic.Unit.PitchClassSet.PitchClassSet(System.Collections.Generic.List<System.String>)
+  type: Constructor
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/Unit/PitchClassSet.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: .ctor
+    path: Unit/PitchClassSet.cs
+    startLine: 45
+  assemblies:
+  - Bodic
+  namespace: Bodic.Unit
+  syntax:
+    content: public PitchClassSet(List<string> stringPitchClassSet)
+    parameters:
+    - id: stringPitchClassSet
+      type: System.Collections.Generic.List{System.String}
+    content.vb: Public Sub New(stringPitchClassSet As List(Of String))
+  overload: Bodic.Unit.PitchClassSet.#ctor*
+  nameWithType.vb: PitchClassSet.PitchClassSet(List(Of String))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Bodic.Unit.PitchClassSet.PitchClassSet(System.Collections.Generic.List(Of System.String))
+  name.vb: PitchClassSet(List(Of String))
+- uid: Bodic.Unit.PitchClassSet.GetEnumerator
+  commentId: M:Bodic.Unit.PitchClassSet.GetEnumerator
+  id: GetEnumerator
+  parent: Bodic.Unit.PitchClassSet
+  langs:
+  - csharp
+  - vb
+  name: GetEnumerator()
+  nameWithType: PitchClassSet.GetEnumerator()
+  fullName: Bodic.Unit.PitchClassSet.GetEnumerator()
+  type: Method
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/Unit/PitchClassSet.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: GetEnumerator
+    path: Unit/PitchClassSet.cs
+    startLine: 100
+  assemblies:
+  - Bodic
+  namespace: Bodic.Unit
+  syntax:
+    content: public IEnumerator GetEnumerator()
+    return:
+      type: System.Collections.IEnumerator
+    content.vb: Public Function GetEnumerator As IEnumerator
+  overload: Bodic.Unit.PitchClassSet.GetEnumerator*
+  implements:
+  - System.Collections.IEnumerable.GetEnumerator
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Bodic.Unit.PitchClassSet.ChangeToNormalForm
+  commentId: M:Bodic.Unit.PitchClassSet.ChangeToNormalForm
+  id: ChangeToNormalForm
+  parent: Bodic.Unit.PitchClassSet
+  langs:
+  - csharp
+  - vb
+  name: ChangeToNormalForm()
+  nameWithType: PitchClassSet.ChangeToNormalForm()
+  fullName: Bodic.Unit.PitchClassSet.ChangeToNormalForm()
+  type: Method
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/Unit/PitchClassSet.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: ChangeToNormalForm
+    path: Unit/PitchClassSet.cs
+    startLine: 107
+  assemblies:
+  - Bodic
+  namespace: Bodic.Unit
+  syntax:
+    content: public void ChangeToNormalForm()
+    content.vb: Public Sub ChangeToNormalForm
+  overload: Bodic.Unit.PitchClassSet.ChangeToNormalForm*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Bodic.Unit.PitchClassSet.IsTransitionallyRelated(Bodic.Unit.PitchClassSet,Bodic.Unit.PitchClassSet)
+  commentId: M:Bodic.Unit.PitchClassSet.IsTransitionallyRelated(Bodic.Unit.PitchClassSet,Bodic.Unit.PitchClassSet)
+  id: IsTransitionallyRelated(Bodic.Unit.PitchClassSet,Bodic.Unit.PitchClassSet)
+  parent: Bodic.Unit.PitchClassSet
+  langs:
+  - csharp
+  - vb
+  name: IsTransitionallyRelated(PitchClassSet, PitchClassSet)
+  nameWithType: PitchClassSet.IsTransitionallyRelated(PitchClassSet, PitchClassSet)
+  fullName: Bodic.Unit.PitchClassSet.IsTransitionallyRelated(Bodic.Unit.PitchClassSet, Bodic.Unit.PitchClassSet)
+  type: Method
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/Unit/PitchClassSet.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: IsTransitionallyRelated
+    path: Unit/PitchClassSet.cs
+    startLine: 191
+  assemblies:
+  - Bodic
+  namespace: Bodic.Unit
+  summary: "\nChecks whether two pitch class set are transitionally related or not.\nTranspositionaaly related pitch-class sets in normal form have the same interval sequence.\n"
+  example: []
+  syntax:
+    content: public static bool IsTransitionallyRelated(PitchClassSet normalFormA, PitchClassSet normalFormB)
+    parameters:
+    - id: normalFormA
+      type: Bodic.Unit.PitchClassSet
+      description: ''
+    - id: normalFormB
+      type: Bodic.Unit.PitchClassSet
+      description: ''
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Shared Function IsTransitionallyRelated(normalFormA As PitchClassSet, normalFormB As PitchClassSet) As Boolean
+  overload: Bodic.Unit.PitchClassSet.IsTransitionallyRelated*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Bodic.Unit.PitchClassSet.IsTransitionallyRelatedTo(Bodic.Unit.PitchClassSet)
+  commentId: M:Bodic.Unit.PitchClassSet.IsTransitionallyRelatedTo(Bodic.Unit.PitchClassSet)
+  id: IsTransitionallyRelatedTo(Bodic.Unit.PitchClassSet)
+  parent: Bodic.Unit.PitchClassSet
+  langs:
+  - csharp
+  - vb
+  name: IsTransitionallyRelatedTo(PitchClassSet)
+  nameWithType: PitchClassSet.IsTransitionallyRelatedTo(PitchClassSet)
+  fullName: Bodic.Unit.PitchClassSet.IsTransitionallyRelatedTo(Bodic.Unit.PitchClassSet)
+  type: Method
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/Unit/PitchClassSet.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: IsTransitionallyRelatedTo
+    path: Unit/PitchClassSet.cs
+    startLine: 199
+  assemblies:
+  - Bodic
+  namespace: Bodic.Unit
+  syntax:
+    content: public bool IsTransitionallyRelatedTo(PitchClassSet anotherNormalFormSet)
+    parameters:
+    - id: anotherNormalFormSet
+      type: Bodic.Unit.PitchClassSet
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsTransitionallyRelatedTo(anotherNormalFormSet As PitchClassSet) As Boolean
+  overload: Bodic.Unit.PitchClassSet.IsTransitionallyRelatedTo*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Bodic.Unit.PitchClassSet.IsInversionallyRelated(Bodic.Unit.PitchClassSet,Bodic.Unit.PitchClassSet)
+  commentId: M:Bodic.Unit.PitchClassSet.IsInversionallyRelated(Bodic.Unit.PitchClassSet,Bodic.Unit.PitchClassSet)
+  id: IsInversionallyRelated(Bodic.Unit.PitchClassSet,Bodic.Unit.PitchClassSet)
+  parent: Bodic.Unit.PitchClassSet
+  langs:
+  - csharp
+  - vb
+  name: IsInversionallyRelated(PitchClassSet, PitchClassSet)
+  nameWithType: PitchClassSet.IsInversionallyRelated(PitchClassSet, PitchClassSet)
+  fullName: Bodic.Unit.PitchClassSet.IsInversionallyRelated(Bodic.Unit.PitchClassSet, Bodic.Unit.PitchClassSet)
+  type: Method
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/Unit/PitchClassSet.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: IsInversionallyRelated
+    path: Unit/PitchClassSet.cs
+    startLine: 210
+  assemblies:
+  - Bodic
+  namespace: Bodic.Unit
+  syntax:
+    content: public static bool IsInversionallyRelated(PitchClassSet normalFormA, PitchClassSet normalFormB)
+    parameters:
+    - id: normalFormA
+      type: Bodic.Unit.PitchClassSet
+    - id: normalFormB
+      type: Bodic.Unit.PitchClassSet
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function IsInversionallyRelated(normalFormA As PitchClassSet, normalFormB As PitchClassSet) As Boolean
+  overload: Bodic.Unit.PitchClassSet.IsInversionallyRelated*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Bodic.Unit.PitchClassSet.IsInversionallyRelatedTo(Bodic.Unit.PitchClassSet)
+  commentId: M:Bodic.Unit.PitchClassSet.IsInversionallyRelatedTo(Bodic.Unit.PitchClassSet)
+  id: IsInversionallyRelatedTo(Bodic.Unit.PitchClassSet)
+  parent: Bodic.Unit.PitchClassSet
+  langs:
+  - csharp
+  - vb
+  name: IsInversionallyRelatedTo(PitchClassSet)
+  nameWithType: PitchClassSet.IsInversionallyRelatedTo(PitchClassSet)
+  fullName: Bodic.Unit.PitchClassSet.IsInversionallyRelatedTo(Bodic.Unit.PitchClassSet)
+  type: Method
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/Unit/PitchClassSet.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: IsInversionallyRelatedTo
+    path: Unit/PitchClassSet.cs
+    startLine: 219
+  assemblies:
+  - Bodic
+  namespace: Bodic.Unit
+  syntax:
+    content: public bool IsInversionallyRelatedTo(PitchClassSet anotherNormalFormSet)
+    parameters:
+    - id: anotherNormalFormSet
+      type: Bodic.Unit.PitchClassSet
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsInversionallyRelatedTo(anotherNormalFormSet As PitchClassSet) As Boolean
+  overload: Bodic.Unit.PitchClassSet.IsInversionallyRelatedTo*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Bodic.Unit.PitchClassSet.IntervalSequence
+  commentId: M:Bodic.Unit.PitchClassSet.IntervalSequence
+  id: IntervalSequence
+  parent: Bodic.Unit.PitchClassSet
+  langs:
+  - csharp
+  - vb
+  name: IntervalSequence()
+  nameWithType: PitchClassSet.IntervalSequence()
+  fullName: Bodic.Unit.PitchClassSet.IntervalSequence()
+  type: Method
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/Unit/PitchClassSet.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: IntervalSequence
+    path: Unit/PitchClassSet.cs
+    startLine: 230
+  assemblies:
+  - Bodic
+  namespace: Bodic.Unit
+  syntax:
+    content: public List<int> IntervalSequence()
+    return:
+      type: System.Collections.Generic.List{System.Int32}
+    content.vb: Public Function IntervalSequence As List(Of Integer)
+  overload: Bodic.Unit.PitchClassSet.IntervalSequence*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Bodic.Unit.PitchClassSet.Transpose(System.Int32)
+  commentId: M:Bodic.Unit.PitchClassSet.Transpose(System.Int32)
+  id: Transpose(System.Int32)
+  parent: Bodic.Unit.PitchClassSet
+  langs:
+  - csharp
+  - vb
+  name: Transpose(Int32)
+  nameWithType: PitchClassSet.Transpose(Int32)
+  fullName: Bodic.Unit.PitchClassSet.Transpose(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/Unit/PitchClassSet.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: Transpose
+    path: Unit/PitchClassSet.cs
+    startLine: 246
+  assemblies:
+  - Bodic
+  namespace: Bodic.Unit
+  summary: "\nTraspose.\nTransposition of a set of pitch classes may involve many changes, but it preserves interval-class content. \nAs a result, it can be an important compositional means of creating a deeper unity bebeath a varied musical surface(p48).\n"
+  example: []
+  syntax:
+    content: public void Transpose(int interval)
+    parameters:
+    - id: interval
+      type: System.Int32
+      description: ''
+    content.vb: Public Sub Transpose(interval As Integer)
+  overload: Bodic.Unit.PitchClassSet.Transpose*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Bodic.Unit.PitchClassSet.Invert(System.Int32)
+  commentId: M:Bodic.Unit.PitchClassSet.Invert(System.Int32)
+  id: Invert(System.Int32)
+  parent: Bodic.Unit.PitchClassSet
+  langs:
+  - csharp
+  - vb
+  name: Invert(Int32)
+  nameWithType: PitchClassSet.Invert(Int32)
+  fullName: Bodic.Unit.PitchClassSet.Invert(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/Unit/PitchClassSet.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: Invert
+    path: Unit/PitchClassSet.cs
+    startLine: 254
+  assemblies:
+  - Bodic
+  namespace: Bodic.Unit
+  syntax:
+    content: public void Invert(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+    content.vb: Public Sub Invert(index As Integer)
+  overload: Bodic.Unit.PitchClassSet.Invert*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Bodic.Unit.PitchClassSet.ToList
+  commentId: M:Bodic.Unit.PitchClassSet.ToList
+  id: ToList
+  parent: Bodic.Unit.PitchClassSet
+  langs:
+  - csharp
+  - vb
+  name: ToList()
+  nameWithType: PitchClassSet.ToList()
+  fullName: Bodic.Unit.PitchClassSet.ToList()
+  type: Method
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/Unit/PitchClassSet.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: ToList
+    path: Unit/PitchClassSet.cs
+    startLine: 262
+  assemblies:
+  - Bodic
+  namespace: Bodic.Unit
+  syntax:
+    content: public List<int> ToList()
+    return:
+      type: System.Collections.Generic.List{System.Int32}
+    content.vb: Public Function ToList As List(Of Integer)
+  overload: Bodic.Unit.PitchClassSet.ToList*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Bodic.Unit.PitchClassSet.ToString
+  commentId: M:Bodic.Unit.PitchClassSet.ToString
+  id: ToString
+  parent: Bodic.Unit.PitchClassSet
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: PitchClassSet.ToString()
+  fullName: Bodic.Unit.PitchClassSet.ToString()
+  type: Method
+  source:
+    remote:
+      path: source/repos/BODIC_Development/Bodic/Unit/PitchClassSet.cs
+      branch: main
+      repo: https://github.com/intermedia-jinwoong/bodic-api-website.git
+    id: ToString
+    path: Unit/PitchClassSet.cs
+    startLine: 267
+  assemblies:
+  - Bodic
+  namespace: Bodic.Unit
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString As String
+  overridden: System.Object.ToString
+  overload: Bodic.Unit.PitchClassSet.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: Bodic.Unit
+  commentId: N:Bodic.Unit
+  name: Bodic.Unit
+  nameWithType: Bodic.Unit
+  fullName: Bodic.Unit
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Collections.IEnumerable
+  commentId: T:System.Collections.IEnumerable
+  parent: System.Collections
+  isExternal: true
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.IEnumerable
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+- uid: Bodic.Unit.PitchClassSet.Content*
+  commentId: Overload:Bodic.Unit.PitchClassSet.Content
+  name: Content
+  nameWithType: PitchClassSet.Content
+  fullName: Bodic.Unit.PitchClassSet.Content
+- uid: System.Collections.Generic.List{System.Int32}
+  commentId: T:System.Collections.Generic.List{System.Int32}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Int32>
+  nameWithType: List<Int32>
+  fullName: System.Collections.Generic.List<System.Int32>
+  nameWithType.vb: List(Of Int32)
+  fullName.vb: System.Collections.Generic.List(Of System.Int32)
+  name.vb: List(Of Int32)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Bodic.Unit.PitchClassSet.NormalForm*
+  commentId: Overload:Bodic.Unit.PitchClassSet.NormalForm
+  name: NormalForm
+  nameWithType: PitchClassSet.NormalForm
+  fullName: Bodic.Unit.PitchClassSet.NormalForm
+- uid: Bodic.Unit.PitchClassSet
+  commentId: T:Bodic.Unit.PitchClassSet
+  parent: Bodic.Unit
+  name: PitchClassSet
+  nameWithType: PitchClassSet
+  fullName: Bodic.Unit.PitchClassSet
+- uid: Bodic.Unit.PitchClassSet.IntervalClassVector*
+  commentId: Overload:Bodic.Unit.PitchClassSet.IntervalClassVector
+  name: IntervalClassVector
+  nameWithType: PitchClassSet.IntervalClassVector
+  fullName: Bodic.Unit.PitchClassSet.IntervalClassVector
+- uid: System.Int32[]
+  isExternal: true
+  name: Int32[]
+  nameWithType: Int32[]
+  fullName: System.Int32[]
+  nameWithType.vb: Int32()
+  fullName.vb: System.Int32()
+  name.vb: Int32()
+  spec.csharp:
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Bodic.Unit.PitchClassSet.Item*
+  commentId: Overload:Bodic.Unit.PitchClassSet.Item
+  name: Item
+  nameWithType: PitchClassSet.Item
+  fullName: Bodic.Unit.PitchClassSet.Item
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Bodic.Unit.PitchClassSet.#ctor*
+  commentId: Overload:Bodic.Unit.PitchClassSet.#ctor
+  name: PitchClassSet
+  nameWithType: PitchClassSet.PitchClassSet
+  fullName: Bodic.Unit.PitchClassSet.PitchClassSet
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<String>
+  nameWithType: List<String>
+  fullName: System.Collections.Generic.List<System.String>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of System.String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Bodic.Unit.PitchClassSet.GetEnumerator*
+  commentId: Overload:Bodic.Unit.PitchClassSet.GetEnumerator
+  name: GetEnumerator
+  nameWithType: PitchClassSet.GetEnumerator
+  fullName: Bodic.Unit.PitchClassSet.GetEnumerator
+- uid: System.Collections.IEnumerable.GetEnumerator
+  commentId: M:System.Collections.IEnumerable.GetEnumerator
+  parent: System.Collections.IEnumerable
+  isExternal: true
+  name: GetEnumerator()
+  nameWithType: IEnumerable.GetEnumerator()
+  fullName: System.Collections.IEnumerable.GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.IEnumerable.GetEnumerator
+    name: GetEnumerator
+    nameWithType: IEnumerable.GetEnumerator
+    fullName: System.Collections.IEnumerable.GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.IEnumerable.GetEnumerator
+    name: GetEnumerator
+    nameWithType: IEnumerable.GetEnumerator
+    fullName: System.Collections.IEnumerable.GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.IEnumerator
+  commentId: T:System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  name: IEnumerator
+  nameWithType: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: Bodic.Unit.PitchClassSet.ChangeToNormalForm*
+  commentId: Overload:Bodic.Unit.PitchClassSet.ChangeToNormalForm
+  name: ChangeToNormalForm
+  nameWithType: PitchClassSet.ChangeToNormalForm
+  fullName: Bodic.Unit.PitchClassSet.ChangeToNormalForm
+- uid: Bodic.Unit.PitchClassSet.IsTransitionallyRelated*
+  commentId: Overload:Bodic.Unit.PitchClassSet.IsTransitionallyRelated
+  name: IsTransitionallyRelated
+  nameWithType: PitchClassSet.IsTransitionallyRelated
+  fullName: Bodic.Unit.PitchClassSet.IsTransitionallyRelated
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Bodic.Unit.PitchClassSet.IsTransitionallyRelatedTo*
+  commentId: Overload:Bodic.Unit.PitchClassSet.IsTransitionallyRelatedTo
+  name: IsTransitionallyRelatedTo
+  nameWithType: PitchClassSet.IsTransitionallyRelatedTo
+  fullName: Bodic.Unit.PitchClassSet.IsTransitionallyRelatedTo
+- uid: Bodic.Unit.PitchClassSet.IsInversionallyRelated*
+  commentId: Overload:Bodic.Unit.PitchClassSet.IsInversionallyRelated
+  name: IsInversionallyRelated
+  nameWithType: PitchClassSet.IsInversionallyRelated
+  fullName: Bodic.Unit.PitchClassSet.IsInversionallyRelated
+- uid: Bodic.Unit.PitchClassSet.IsInversionallyRelatedTo*
+  commentId: Overload:Bodic.Unit.PitchClassSet.IsInversionallyRelatedTo
+  name: IsInversionallyRelatedTo
+  nameWithType: PitchClassSet.IsInversionallyRelatedTo
+  fullName: Bodic.Unit.PitchClassSet.IsInversionallyRelatedTo
+- uid: Bodic.Unit.PitchClassSet.IntervalSequence*
+  commentId: Overload:Bodic.Unit.PitchClassSet.IntervalSequence
+  name: IntervalSequence
+  nameWithType: PitchClassSet.IntervalSequence
+  fullName: Bodic.Unit.PitchClassSet.IntervalSequence
+- uid: Bodic.Unit.PitchClassSet.Transpose*
+  commentId: Overload:Bodic.Unit.PitchClassSet.Transpose
+  name: Transpose
+  nameWithType: PitchClassSet.Transpose
+  fullName: Bodic.Unit.PitchClassSet.Transpose
+- uid: Bodic.Unit.PitchClassSet.Invert*
+  commentId: Overload:Bodic.Unit.PitchClassSet.Invert
+  name: Invert
+  nameWithType: PitchClassSet.Invert
+  fullName: Bodic.Unit.PitchClassSet.Invert
+- uid: Bodic.Unit.PitchClassSet.ToList*
+  commentId: Overload:Bodic.Unit.PitchClassSet.ToList
+  name: ToList
+  nameWithType: PitchClassSet.ToList
+  fullName: Bodic.Unit.PitchClassSet.ToList
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Bodic.Unit.PitchClassSet.ToString*
+  commentId: Overload:Bodic.Unit.PitchClassSet.ToString
+  name: ToString
+  nameWithType: PitchClassSet.ToString
+  fullName: Bodic.Unit.PitchClassSet.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

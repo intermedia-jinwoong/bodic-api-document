@@ -1,0 +1,548 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/Users/jinwoong/source/repos/BODIC_Development/Bodic",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Conceptual",
+      "source_relative_path": "README.md",
+      "output": {
+        ".html": {
+          "relative_path": "README.html",
+          "hash": "/aiDKJFr4UGBVjTc5XEUuA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Bodic.Analysis.Analysis.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Bodic.Analysis.Analysis.html",
+          "hash": "VY0KjjPzJ9kXJiAOGBqOyQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Bodic.Analysis.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Bodic.Analysis.html",
+          "hash": "NlDRRwYT7D/9ynJLpsCv9A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Bodic.Basic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Bodic.Basic.html",
+          "hash": "FstuFyMbJDmF6R+/s7ySew=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Bodic.Combinatorics.Combinatorics.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Bodic.Combinatorics.Combinatorics.html",
+          "hash": "sOGPuZo1gihp5wNgh06NNg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Bodic.Combinatorics.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Bodic.Combinatorics.html",
+          "hash": "vrCNHyZHcK6rwknJCLmVBA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Bodic.Conversion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Bodic.Conversion.html",
+          "hash": "WXR/4tp4YoVuLp5SvdEnxQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Bodic.Interval.Interval.PitchClassInterval.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Bodic.Interval.Interval.PitchClassInterval.html",
+          "hash": "atZgLincj4VuC+7Ke46LvQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Bodic.Interval.Interval.PitchInterval.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Bodic.Interval.Interval.PitchInterval.html",
+          "hash": "fkl9eONExRpnGUDlHEPPSg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Bodic.Interval.Interval.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Bodic.Interval.Interval.html",
+          "hash": "1nZvgzxWI+ZCF4lriVz4Zg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Bodic.Interval.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Bodic.Interval.html",
+          "hash": "0++7sSBCoRFz/3gsbt9+lA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Bodic.Sequence.Sequence.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Bodic.Sequence.Sequence.html",
+          "hash": "gc5lEeW6fT0sSwZ7MmOQSg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Bodic.Sequence.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Bodic.Sequence.html",
+          "hash": "JO1N/yvjNG1Gltis5LeGjw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Bodic.Unit.Chord.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Bodic.Unit.Chord.html",
+          "hash": "9jhg2/LbQThGDlo7OvQfsw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Bodic.Unit.Component.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Bodic.Unit.Component.html",
+          "hash": "xzJq3jCmHSt6yMWw6fAycQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Bodic.Unit.Container.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Bodic.Unit.Container.html",
+          "hash": "5TEBSnn1Tx6+tkMRnU2xsw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Bodic.Unit.NCR.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Bodic.Unit.NCR.html",
+          "hash": "wiM68EPWI48GXpMTC9TiRA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Bodic.Unit.Note.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Bodic.Unit.Note.html",
+          "hash": "tnGpvTvL4a+FZwmut2mvhQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Bodic.Unit.PitchClassSet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Bodic.Unit.PitchClassSet.html",
+          "hash": "57uuij6tt9sBLVo1ih8X/w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Bodic.Unit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Bodic.Unit.html",
+          "hash": "hXLrrw7AMEwi+WTB++uRXw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Bodic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Bodic.html",
+          "hash": "zVYNjJNmRxS8/2Mm8dIWIA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "xhto20adMo75C4d+64zYgw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "b2VPm1ivgdgKNWcJ8GzkoA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/Basic_Concepts_of_Pitch_and_Interval.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/Basic_Concepts_of_Pitch_and_Interval.html",
+          "hash": "HyuY3dpIZaApbaL6B4qomQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html",
+          "hash": "uiA4z/zC/9bG0s+LGIJqpQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "MSGvqnY7Nv8RFQWbMyhRQw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "5Krjp20FS8/m3auMN39VPw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "WEK2IfAdT/9JuEWT+wyrFQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "tutorials/om_tutorial/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "tutorials/om_tutorial/intro.html",
+          "hash": "ORY7TvPwTOOMHJSlOf7Kfg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "tutorials/om_tutorial/tutorial1.md",
+      "output": {
+        ".html": {
+          "relative_path": "tutorials/om_tutorial/tutorial1.html",
+          "hash": "UvN7mkORvtpvncZR3MovWw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "tutorials/om_tutorial/tutorial11.md",
+      "output": {
+        ".html": {
+          "relative_path": "tutorials/om_tutorial/tutorial11.html",
+          "hash": "3NoXuG+GnR7sJyQW0e+Uig=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "tutorials/om_tutorial/tutorial12.md",
+      "output": {
+        ".html": {
+          "relative_path": "tutorials/om_tutorial/tutorial12.html",
+          "hash": "Li6tSW2i+P9zeguPQcAwmw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "tutorials/om_tutorial/tutorial13.md",
+      "output": {
+        ".html": {
+          "relative_path": "tutorials/om_tutorial/tutorial13.html",
+          "hash": "OyCRsI+OuLmFjFllBVsoQg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "tutorials/om_tutorial/tutorial14.md",
+      "output": {
+        ".html": {
+          "relative_path": "tutorials/om_tutorial/tutorial14.html",
+          "hash": "NqvRK3OIu2DX6DPiBl38nQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "tutorials/om_tutorial/tutorial2.md",
+      "output": {
+        ".html": {
+          "relative_path": "tutorials/om_tutorial/tutorial2.html",
+          "hash": "B9jOCBPm6Yl1Gw12NgcOuw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "tutorials/om_tutorial/tutorial3.md",
+      "output": {
+        ".html": {
+          "relative_path": "tutorials/om_tutorial/tutorial3.html",
+          "hash": "Mu1afhTc4kjSS0jgi6yMLA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "tutorials/om_tutorial/tutorial5.md",
+      "output": {
+        ".html": {
+          "relative_path": "tutorials/om_tutorial/tutorial5.html",
+          "hash": "IhBvKfd4rBDOAF8IYbkWtg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "tutorials/om_tutorial/tutorial6.md",
+      "output": {
+        ".html": {
+          "relative_path": "tutorials/om_tutorial/tutorial6.html",
+          "hash": "s8zhtbV0IXAN6dCXhH+kpg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "tutorials/om_tutorial/tutorial7.md",
+      "output": {
+        ".html": {
+          "relative_path": "tutorials/om_tutorial/tutorial7.html",
+          "hash": "bPNEs75LTLU7H/GUNMIb5Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "tutorials/om_tutorial/tutorial8.md",
+      "output": {
+        ".html": {
+          "relative_path": "tutorials/om_tutorial/tutorial8.html",
+          "hash": "6DJFt2Mm22ips1PibgLB5Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "tutorials/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "tutorials/toc.html",
+          "hash": "smLdtHHj9UAw0SMgLg+35Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because docfx version changed from 2.56.6.0 to 2.56.5.0.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "DocfxVersionChanged"
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 17,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 20,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

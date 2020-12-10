@@ -1,0 +1,47 @@
+### YamlMime:TableOfContent
+- uid: Bodic
+  name: Bodic
+  items:
+  - uid: Bodic.Basic
+    name: Basic
+  - uid: Bodic.Conversion
+    name: Conversion
+- uid: Bodic.Analysis
+  name: Bodic.Analysis
+  items:
+  - uid: Bodic.Analysis.Analysis
+    name: Analysis
+- uid: Bodic.Combinatorics
+  name: Bodic.Combinatorics
+  items:
+  - uid: Bodic.Combinatorics.Combinatorics
+    name: Combinatorics
+- uid: Bodic.Interval
+  name: Bodic.Interval
+  items:
+  - uid: Bodic.Interval.Interval
+    name: Interval
+  - uid: Bodic.Interval.Interval.PitchClassInterval
+    name: Interval.PitchClassInterval
+  - uid: Bodic.Interval.Interval.PitchInterval
+    name: Interval.PitchInterval
+- uid: Bodic.Sequence
+  name: Bodic.Sequence
+  items:
+  - uid: Bodic.Sequence.Sequence
+    name: Sequence
+- uid: Bodic.Unit
+  name: Bodic.Unit
+  items:
+  - uid: Bodic.Unit.Chord
+    name: Chord
+  - uid: Bodic.Unit.Component
+    name: Component
+  - uid: Bodic.Unit.Container
+    name: Container
+  - uid: Bodic.Unit.NCR
+    name: NCR
+  - uid: Bodic.Unit.Note
+    name: Note
+  - uid: Bodic.Unit.PitchClassSet
+    name: PitchClassSet
