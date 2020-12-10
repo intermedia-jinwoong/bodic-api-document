@@ -1,0 +1,13 @@
+- name: Home
+  href: index.md
+
+- name: Articles
+  href: articles/
+  homepage: articles/intro.md
+
+- name: Tutorials
+  href: tutorials/
+  homepage: tutorials/om_tutorial/intro.md
+
+- name: API Documentation
+  href: api/
